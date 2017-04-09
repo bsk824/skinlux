@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.loginWrap {width:828px;margin:0 auto;border:8px solid #f0f0f0;text-align:center;}
+.loginWrap > section {display:inline-block;width:295px;padding:45px 0;vertical-align:top;}
+.loginWrap .subTitle {color:#343434;font-size:18px;line-height:1;text-align:center;}

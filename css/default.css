@@ -21,7 +21,21 @@ legend, caption {visibility:hidden;width:0;font-size:0;line-height:0;text-indent
 address, em {font-style:normal;}
 button {overflow:visible;cursor:pointer;background:none;border:0;}
 button::-moz-focus-inner {padding:0;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {color:#555;}
+
+textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
+input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 
 .skipNavi li {font-size:0;line-height:0;}
 .skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#044894;color:#fff;font-size:14px;line-height:2;text-align:center;z-index:500;}
 .skipNavi li a:focus {top:0;} 
+
+
+@media all and (max-width:1023px) {
+	body, input, select, textarea, button {font-size:1.4rem;}
+}
+@media all and (max-width:560px) {
+	body, input, select, textarea, button {font-size:1.2rem;}
+}
