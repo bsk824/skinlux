@@ -44,6 +44,30 @@ $(function() {
 	$('#gnb').gnb();
 });
 
+function tabContent(obj) {
+	var $this = $(obj),
+		tapBtn = $this.find('a, button');
+
+	tapBtn.on('click',function(){
+		var _this = $(this);
+		
+		_this.parent().addClass('active').siblings().removeClass('active');
+		if (_this.attr('href')) {
+			$(_this.attr('href')).addClass('active').siblings().removeClass('active');
+		}
+		return false;
+	});
+}
+
+function activeField(obj) {
+	var $this = $(obj)
+		field = $this.parent().find('fieldset');
+	if ($this.find('input[type="radio"]').prop('checked',true)) {
+		field.removeClass('disable');
+		$this.parent().siblings().find('fieldset').addClass('disable');
+	}
+}
+
 var winW = $(window).width();
 function fontSize(w) {
 	if (w <= 560) {

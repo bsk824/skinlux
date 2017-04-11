@@ -70,7 +70,7 @@
 								<li><a href="#">공지사항</a></li>
 								<li><a href="#">스타방문</a></li>
 								<li><a href="#">언론보도</a></li>
-								<li><a href="#">이벤트 </a></li>
+								<li><a href="#">이벤트</a></li>
 							</ul>
 						</div>
 					</li>
@@ -80,13 +80,93 @@
 		</div>
 	</header>
 	<div class="location">
-		<p><a href="/">Home</a> &gt; <span>치료사례/후기</span></p>
+		<p><a href="/">Home</a> &gt; <span>마이페이지</span></p>
 	</div>
+
 	<div id="container">
 		<section class="content">
-			
+			<h1 class="pageTitle">마이페이지</h1>
+			<div class="tableWrite">
+				<table>
+					<caption>회원 정보 입력 테이블</caption>
+					<colgroup>
+						<col style="width:190px">
+						<col style="width:300px">
+						<col style="width:190px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td colspan="3">
+								<input type="text" class="txt">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td colspan="3">
+								<input type="text" class="txt">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td>
+								<input type="password" class="txt">
+							</td>
+							<th scope="row">비밀번호 확인</th>
+							<td>
+								<input type="password" class="txt">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일주소</th>
+							<td colspan="3">
+								<span class="email">
+									<span><input type="text" class="txt"></span>
+									<span class="sym">@</span>
+									<span><input type="text" class="txt"></span>
+									<span>
+										<select>
+											<option>직접입력</option>
+										</select>
+									</span>
+								</span>
+								<label>
+									<input type="checkbox" />
+									이메일 수신동의
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰번호</th>
+							<td colspan="3">
+								<span class="phone">
+									<span>
+										<select>
+											<option>010</option>
+										</select>
+									</span>
+									<span class="sym">-</span>
+									<span><input type="text" class="txt"></span>
+									<span class="sym">-</span>
+									<span><input type="text" class="txt"></span>
+								</span>
+								<label>
+									<input type="checkbox" />
+									SMS 수신동의
+								</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnWrap">
+				<span><a href="#" class="btnType4">취소</a></span>
+				<span><a href="#" class="btnType5">회원정보 입력하기</a></span>
+			</div>
 		</section>
 	</div>
+
 	<footer id="footer">
 		<section>
 			<h1>SKINLUX</h1>

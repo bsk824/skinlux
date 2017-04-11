@@ -8,7 +8,7 @@
 }
 
 * {margin:0;padding:0;}
-body {color:#555;font:14px/1.5 NanumSquare, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
+body {min-width:1120px\9;color:#555;font:14px/1.5 NanumSquare, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
 a {color:#555;text-decoration:none;}
 ol, li {list-style:none;}
 table {width:100%;border-collapse:collapse;border:0;word-break:normal;}
@@ -17,14 +17,16 @@ input, select, textarea, button {vertical-align:middle;font:14px/1.5 NanumSquare
 fieldset, img {border:0;}
 img {vertical-align:top;}
 label, td img {vertical-align:middle;}
-legend, caption {visibility:hidden;width:0;font-size:0;line-height:0;text-indent:-5000px;}
+legend, caption, .hidden {font:0/0 a!important;}
 address, em {font-style:normal;}
 button {overflow:visible;cursor:pointer;background:none;border:0;}
-button::-moz-focus-inner {padding:0;}
+button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
 
 ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {color:#555;}
 
+input.txt {line-height:1;}
+select {height:30px;border:1px solid #dbdbdb;}
 textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 
@@ -32,10 +34,54 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 .skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#044894;color:#fff;font-size:14px;line-height:2;text-align:center;z-index:500;}
 .skipNavi li a:focus {top:0;} 
 
+.chk {display:inline-block;cursor:pointer;vertical-align:middle;}
+.chk + .chk {margin:0 0 0 5px;}
+.chk input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
+.chk input + span:before {content:"";display:inline-block;display:none\9;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('../images/icon_pack.png') no-repeat 0 -26px;}
+.chk input:checked + span:before {background-position:0 -48px;}
+
+.radio {display:inline-block;cursor:pointer;vertical-align:middle;}
+.radio + .radio {margin:0 0 0 5px;}
+.radio input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
+.radio input + span:before {content:"";display:inline-block;display:none\9;width:25px;height:25px;margin:0 4px 0 0;vertical-align:middle;background:url('../images/icon_pack.png') no-repeat -30px -41px;}
+.radio input:checked + span:before {background-position:-55px -41px;}
+
+.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;}
+.ui-datepicker .ui-datepicker-header {position:relative;padding:5px 0;text-align:center;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {position:absolute;top:10px;font:0/0 a!important;}
+.ui-datepicker .ui-datepicker-prev {left:2px;border:6px solid transparent;border-right:6px solid #333;}
+.ui-datepicker .ui-datepicker-next {right:2px;border:6px solid transparent;border-left:6px solid #333;}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {border:0;background:none;}
+.ui-datepicker td span,
+.ui-datepicker td a {display:block;padding:5px;text-align:center;}
+.ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../images/btn_cal.gif) no-repeat;font:0/0 a!important;}
 
 @media all and (max-width:1023px) {
 	body, input, select, textarea, button {font-size:1.4rem;}
+	select {height:3rem;}
+	textarea, input.txt {height:3rem;padding:.6rem .5rem;border-width:.1rem;box-sizing:border-box;}
+	input.txt:focus, textarea:focus {border-width:.1rem;}
+
+	.chk + .chk {margin:0 0 0 .5rem;}
+	.chk input + span:before {width:2.2rem;height:2.2rem;margin:0 1rem 0 0;background-position:0 -2.6rem;background-size:50rem;}
+	.chk input:checked + span:before {background-position:0 -4.8rem;}
+
+	.radio + .radio {margin:0 0 0 .5rem;}
+	.radio input + span:before {width:2.5rem;height:2.5rem;margin:0 .4rem 0 0;background-position:-3rem -4.1rem;background-size:50rem;}
+	.radio input:checked + span:before {background-position:-5.5rem -4.1rem;}
 }
 @media all and (max-width:560px) {
 	body, input, select, textarea, button {font-size:1.2rem;}
+	select, input.txt {height:2.8rem;}
+	
+	.ui-datepicker {width:24rem;border:.1rem solid #ccc;}
+	.ui-datepicker .ui-datepicker-header {padding:.5rem 0;}
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next {top:1rem;}
+	.ui-datepicker .ui-datepicker-prev {left:.2rem;border:.6rem solid transparent;border-right:.6rem solid #333;}
+	.ui-datepicker .ui-datepicker-next {right:.2rem;border:.6rem solid transparent;border-left:.6rem solid #333;}
+	.ui-datepicker td span,
+	.ui-datepicker td a {display:block;padding:.5rem;text-align:center;}
 }
