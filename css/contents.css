@@ -12,13 +12,12 @@
 .afterSlide li .picture:after {content:"";position:absolute;top:50%;left:50%;width:19px;height:33px;margin:-16px 0 0 -10px;background:url('../images/icon_pack.png') no-repeat -235px 0;}
 .afterSlide li .info {display:block;margin:10px 0 0;color:#333;font-size:16px;}
 .afterSlide li .info span {display:inline-block;margin:0 20px;}
-.afterSlide li .info b {position:relative;margin:0 0 0 20px;}
+.afterSlide li .info b {display:inline-block;position:relative;margin:0 0 0 20px;}
 .afterSlide li .info b:before {content:"";position:absolute;top:3px;left:-12px;height:12px;border-left:1px solid #595959;border-right:1px solid #c9c9c9;}
 
 .afterSlide .bx-pager {position:absolute;top:-30px;right:15px;}
 .afterSlide .bx-pager button {width:15px;height:15px;margin:0 0 0 5px;background:#c1c1c1;font:0/0 a!important;}
 .afterSlide .bx-pager button.active {background:#42b1b2;}
-
 
 .loginWrap {width:828px;margin:0 auto;border:8px solid #f0f0f0;text-align:center;}
 .loginWrap > section {display:inline-block;width:295px;margin:0 25px;padding:45px 0;vertical-align:top;text-align:left;}
@@ -141,15 +140,15 @@
 	.joinField .infoInput p + p {margin:1rem 0 0;}
 	.joinField .infoInput .refer {margin:.5rem 0 3.5rem;padding:0 0 0 1.5rem;font-size:1.2rem;}
 	.joinField input.txt {width:100%;padding:1.3rem 1.5rem;}
-	.joinField .btnType2 {width:6rem;margin:0;}
 	.joinField .email {display:table;position:relative;width:100%;padding-right:6.5rem;}
 	.joinField .email * {float:none;}
 	.joinField .email span {display:table-cell;width:50%;}
 	.joinField .email .sym {width:auto;padding:0 .5rem;line-height:4rem;}
 	.joinField .email input.txt {width:100%;}
+	.joinField .email .btnType2 {top:.5rem;}
 	.joinField .idInput {position:relative;padding-right:6.5rem;}
 	.joinField .idInput input.txt {float:none;width:100%;}
-	.joinField .btnType2 {position:absolute;top:0;right:0;}
+	.joinField .btnType2 {position:absolute;top:0;right:0;width:6rem;line-height:2.8rem;margin:0;}
 
 	.termsWrap p + p {margin:.5rem 0 0;}
 	.termsWrap table {margin:.5rem 0 0;border-width:.1rem;}
@@ -159,9 +158,10 @@
 
 	.joinField .btnWrap {margin:1.8rem 0 0;}
 	.joinField .btnWrap .btnType1 {width:100%;margin:0;font-size:2.2rem;}
-	.joinField .btnWrap div {overflow:hidden;margin:1rem -.5rem 0;}
-	.joinField .btnWrap span {width:50%;padding:0 .5rem;box-sizing:border-box;}
-	.joinField .btnWrap span a {margin:0;}
+	.joinField .btnWrap div {display:flex;overflow:hidden;margin:1rem 0 0;}
+	.joinField .btnWrap span {width:50%;margin:0;}
+	.joinField .btnWrap span + span {margin:0 0 0 .4rem;}
+	.joinField .btnWrap span a {width:100%;margin:0;}
 
 	.idpwFindWrap .tabContent > div {width:49%;padding-left:0;}
 
@@ -196,9 +196,11 @@
 	.idpwFindWrap fieldset .row .phone > span {display:table-cell;width:30%;}
 	.idpwFindWrap fieldset .row .phone > span.sym {width:5%;text-align:center;}
 	.idpwFindWrap fieldset .row .phone select {height:3rem;}
-	.idpwFindWrap fieldset .row .btnType2 {line-height:2.8rem;font-size:1.2rem;}
+	.idpwFindWrap fieldset .row .btnType2 {line-height:2.6rem;font-size:1.2rem;}
 	.idpwFindWrap .btnWrap .btnType1 {width:29.8rem;font-size:2.2rem;}
 
+	.joinField .email .btnType2 {top:.6rem;}
+	.joinField .btnType2 {line-height:2.6rem;}
 }
 
 @media all and (max-width:560px) {
@@ -215,7 +217,6 @@
 
 	.joinField {width:100%;border-width:.4rem;}
 	.joinField > div {padding:1rem;}
-	.joinField .btnWrap div {margin:0;}
-	.joinField .btnWrap span {width:100%;margin:.5rem 0 0;padding:0;}
-	.joinField .btnWrap span a {margin:0;}
+	.joinField .btnWrap {display:block;}
+	.joinField .btnWrap > div a {padding-left:1.7rem;}
 }
