@@ -61,7 +61,7 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 @media all and (max-width:1023px) {
 	body, input, select, textarea, button {font-size:1.4rem;}
 	select {height:3rem;}
-	textarea, input.txt {height:3rem;padding:.6rem .5rem;border-width:.1rem;box-sizing:border-box;}
+	textarea, input.txt {height:3rem;padding:.6rem .5rem;border-width:.1rem;border-radius:0;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 	input.txt:focus, textarea:focus {border-width:.1rem;}
 
 	.chk + .chk {margin:0 0 0 .5rem;}
