@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* layout */
-#header {height:115px;border-bottom:1px solid #cbcbcb;}
+#header {position:relative;height:115px;border-bottom:1px solid #cbcbcb;z-index:10;}
 #header .headTop {position:relative;max-width:1120px;margin:0 auto;}
 #header h1 {position:absolute;top:58px;left:0;color:#000;font:48px/1 Arial;font-weight:bold;letter-spacing:-1px;}
 #header .btnMobNav {display:none;}
@@ -155,19 +155,35 @@
 /* bbs */
 .bbsList {position:relative;border-top:2px solid #555;}
 .bbsList:before {content:"";position:absolute;top:0;right:0;left:0;height:46px;background:#fcfcfc;border-bottom:1px solid #ddd;}
+.bbsList .bbsSearch {position:absolute;top:-40px;right:0;}
 .bbsList ul {overflow:hidden;padding:46px 0 0;}
 .bbsList ul li {border-bottom:1px solid #eee;}
 .bbsList ul a {display:block;height:46px;line-height:46px;}
 .bbsList ul a > span {position:relative;float:left;text-align:center;}
-.bbsList ul a > span b {display:none;position:absolute;top:-46px;right:0;left:0;cursor:default;}
+.bbsList ul a > span b {display:none;position:absolute;top:-46px;right:0;left:0;cursor:default;text-align:center;}
 .bbsList ul a > span b:after {content:"";position:absolute;top:38%;left:-1px;height:14px;border-left:1px solid #ccc;}
 .bbsList ul li:first-child a > span b {display:block;}
-.bbsList ul a > span span {display:block;}
-.bbsList ul .sort span {padding:0 0 0 50px;text-align:left;}
-.bbsList ul .subject span {padding:0 50px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;}
-.bbsList .bbsSearch {position:absolute;top:-40px;right:0;}
+.bbsList ul a > span span {display:inline-block;}
+.bbsList ul .sort {text-align:left;}
+.bbsList ul .sort span {padding:0 0 0 50px;}
+.bbsList ul .subject {text-align:left;}
+.bbsList ul .subject span {max-width:80%;padding:0 50px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
+.bbsList ul .subject2 {text-align:left;}
+.bbsList ul .subject2 span {display:inline-block;max-width:70%;padding:0 0 0 50px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;vertical-align:middle;}
+.bbsList ul .status span {color:#fff;width:70px;height:27px;line-height:28px;vertical-align:middle;}
+.bbsList ul .status .c {background:#a9a9a9;}
+.bbsList ul .status .q {background:#77bec6;}
+.bbsList ul .status .r {background:#f63c52;}
+.bbsList ul .lock {display:inline-block;width:16px;height:21px;margin:0 0 0 5px;background:url('../images/icon_pack.png') no-repeat -80px -42px;font:0/0 a!important;vertical-align:middle;}
 
 .bbsView {border-top:2px solid #555;}
+.bbsView .head {position:relative;background:#fcfcfc;border-bottom:1px solid #ddd;font-size:16px;}
+.bbsView .head strong {display:inline-block;margin:0 0 0 11px;padding:0 0 0 15px;border-left:1px solid #555;font-weight:normal;line-height:1;}
+.bbsView .head .subject {padding:15px 0 15px 35px;}
+.bbsView .head .subject * {display:inline-block;vertical-align:middle;}
+.bbsView .head .subject strong {width:550px;}
+.bbsView .head .sort {position:absolute;top:50%;right:250px;margin-top:-12px;}
+.bbsView .head .date {position:absolute;top:50%;right:25px;margin-top:-12px;}
 .bbsView .title {position:relative;padding:10px 210px 10px 30px;background:#fcfcfc;color:#242424;border-bottom:1px solid #ddd;font-size:18px;}
 .bbsView .title .date {position:absolute;top:50%;right:35px;margin-top:-12px;color:#938484;}
 .bbsView .cont {padding:25px 120px 30px;}
@@ -184,6 +200,10 @@
 .bbsView .txt {margin:20px 0 35px;font-size:14px;}
 .bbsView .txt .sub {display:block;width:55px;line-height:28px;margin:0 0 10px;background:#393939;color:#fff;text-align:center;border-radius:15px;}
 .bbsView .reply {padding:40px 70px;background:#f4f4f4;}
+.bbsView .replyHead {position:relative;margin:0 0 15px;padding:0 0 15px;border-bottom:1px solid #c6c6c6;}
+.bbsView .replyHead .writer .status {display:inline-block;margin:0 10px 0 0;padding:5px 10px;background:#a9a9a9;color:#fff;}
+.bbsView .replyHead .date {position:absolute;top:0;right:0;}
+.bbsView .replyHead .date span {display:inline-block;margin:0 0 0 11px;padding:0 0 0 15px;border-left:1px solid #555;font-weight:normal;line-height:1;}
 .bbsView .btnWrap {margin:15px 0 0;text-align:right;}
 .bbsView .viewNav {margin:50px 0 0;border-bottom:1px solid #eee;}
 .bbsView .viewNav li {position:relative;height:45px;line-height:45px;padding:0 170px 0 150px;border-top:1px solid #eee;}
@@ -274,6 +294,15 @@ hr {margin:50px 0;}
 	.bbsList ul .subject span {padding:0 2rem;}
 
 	.bbsView {border-width:.2rem;}
+	.bbsView .head {padding:1rem 0;border-width:.1rem;font-size:1.6rem;}
+	.bbsView .head strong {margin:0;padding:0 1.5rem;border-width:.1rem;}
+	.bbsView .head .subject {position:relative;margin:0 0 1rem;padding:0 0 0 8rem;}
+	.bbsView .head .subject span {position:absolute;top:50%;left:0;width:8rem;border-right:.1rem solid #555;transform:translate(0, -50%);text-align:center;}
+	.bbsView .head .subject strong {width:100%;border:0;box-sizing:border-box;}
+	.bbsView .head .sort,
+	.bbsView .head .date {position:static;display:inline-block;margin:0 15rem 0 0;text-align:center;}
+	.bbsView .head .sort span, .bbsView .head .date span {display:inline-block;width:8rem;}
+	.bbsView .head .sort strong, .bbsView .head .date strong {margin:0 0 0 -.4rem;}
 	.bbsView .title {padding:1rem 21rem 1rem 3rem;border-width:.1rem;font-size:1.8rem;}
 	.bbsView .title .date {right:3.5rem;margin-top:0;transform:translate(0, -50%);}
 	.bbsView .cont {padding:2rem 5rem 3rem;}
@@ -285,7 +314,11 @@ hr {margin:50px 0;}
 	.bbsView figcaption {font-size:2rem;line-height:4rem;}
 	.bbsView .txt {margin:2rem 0 3.5rem;font-size:1.4rem;}
 	.bbsView .txt .sub {width:5.5rem;line-height:2.8rem;margin:0 0 1rem;border-radius:1.5rem;}
-	.bbsView .reply {padding:4rem 7rem;}
+	.bbsView .reply {padding:2rem 5rem;}
+	.bbsView .replyHead {margin:0 0 1.5rem;padding:0 0 1.5rem;border-width:.1rem}
+	.bbsView .replyHead .writer .status {margin:0 1rem 0 0;padding:.5px 1rem;}
+	.bbsView .replyHead .date span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;}
+
 	.bbsView .btnWrap {margin:1.5rem 0 0;}
 	.bbsView .viewNav {margin:5rem 0 0;border-width:.1rem;}
 	.bbsView .viewNav li {height:4.5rem;line-height:4.5rem;padding:0 17rem 0 15rem;border-width:.1rem;}
@@ -336,6 +369,7 @@ hr {margin:50px 0;}
 	/* bbs */
 	.bbsList {margin:1.5rem 0 0;border-width:.2rem;}
 	.bbsList:before {display:none;}
+	.bbsList .bbsSearch {top:-3.2rem;right:0;}
 	.bbsList ul {padding:0;}
 	.bbsList ul li {border-width:.1rem}
 	.bbsList ul a {height:auto;padding:.5rem;line-height:1.2;}
@@ -343,20 +377,28 @@ hr {margin:50px 0;}
 	.bbsList ul a > span b,
 	.bbsList ul li:first-child a > span b {display:inline-block;position:static;}
 	.bbsList ul a > span b:after {content:":";position:static;height:auto;border:0;}
-	.bbsList ul a > span span {display:inline-block;}
 	.bbsList ul .sort span {padding:0;}
 	.bbsList ul a > span.subject b,
 	.bbsList ul li:first-child a > .subject b {display:none;}
 	.bbsList ul .subject {display:block;}
-	.bbsList ul .subject span {display:block;padding:.5rem 0;}
-	.bbsList .bbsSearch {top:-3.2rem;right:0;}
+	.bbsList ul .subject span {max-width:100%;padding:.5rem 0;box-sizing:border-box;}
+	.bbsList ul .subject2 {display:block;}
+	.bbsList ul .subject2 span {max-width:80%;padding:.5rem 0;}
+	.bbsList ul .status span {width:auto;height:2.2rem;padding:0 .5rem;line-height:2.3rem;text-align:center;}
+	.bbsList ul .lock {width:1.6rem;height:2.1rem;margin:0 0 0 .5rem;background-position:-8rem -4.2rem;background-size:50rem;}
 	
+	.bbsView .head {font-size:1.4rem;}
+	.bbsView .head .subject {padding:0 0 0 5rem;}
+	.bbsView .head .subject span {width:5rem;}
+	.bbsView .head .sort, .bbsView .head .date {margin:0 5rem 0 0;}
+	.bbsView .head .sort span, .bbsView .head .date span {width:5rem;}
 	.bbsView .title {padding:.5rem 10rem .5rem .5rem;font-size:1.4rem;}
 	.bbsView .title .date {right:.5rem;}
 	.bbsView .cont {padding:1rem .5rem 2rem;}
-	.bbsView .info {font-size:1.2rem;line-height:2.5rem;}
-	.bbsView .info span {padding:0 .2rem;}
-	.bbsView .info b {padding:0 .2rem;}
+	.bbsView .info {font-size:1.4rem;line-height:2.5rem;border-top:0;}
+	.bbsView .info * {display:block;float:left;box-sizing:border-box;border-top:1px solid #d5d5d5;}
+	.bbsView .info span {width:30%;padding:0;border-left:0;}
+	.bbsView .info b {width:70%;padding:0 0 0 1rem;}
 	.bbsView .picture {margin:1.5rem 0 0;}
 	.bbsView figure {width:48%;}
 	.bbsView figcaption {font-size:1.6rem;line-height:3rem;}
@@ -364,6 +406,7 @@ hr {margin:50px 0;}
 	.bbsView .txt .sub {width:5.5rem;line-height:2.8rem;margin:0 0 1rem;border-radius:1.5rem;}
 	.bbsView .reply {padding:1rem;}
 	.bbsView .btnWrap {margin:1.5rem 0 0;}
+	.bbsView .btnWrap .btnType6 {width:100%;}
 	.bbsView .viewNav {margin:2rem 0 0;}
 	.bbsView .viewNav li {height:3rem;line-height:3rem;padding:0 10rem 0 9rem;}
 	.bbsView .viewNav li span:first-child {width:8rem;}
