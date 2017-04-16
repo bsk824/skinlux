@@ -19,6 +19,9 @@
 .afterSlide .bx-pager button {width:15px;height:15px;margin:0 0 0 5px;background:#c1c1c1;font:0/0 a!important;}
 .afterSlide .bx-pager button.active {background:#42b1b2;}
 
+.evtList {border-top:2px solid #555;padding:40px 0 0;text-align:center;}
+.evtList li {display:inline-block;width:490px;margin:0 20px 50px;vertical-align:top;}
+
 .loginWrap {width:828px;margin:0 auto;border:8px solid #f0f0f0;text-align:center;}
 .loginWrap > section {display:inline-block;width:295px;margin:0 25px;padding:45px 0;vertical-align:top;text-align:left;}
 .loginWrap .subTitle {margin:0 0 15px;color:#343434;font-size:18px;line-height:1;text-align:center;font-weight:normal;}
@@ -84,6 +87,10 @@
 @media all and (max-width:1200px) {
 	.afterSlide li .info span {margin:0 10px;}
 
+	.evtList {border-width:.2rem;padding:4rem 0 0;}
+	.evtList li {width:45%;margin:0;padding:0 2rem 4rem;}
+	.evtList li img {width:100%;}
+
 	.idpwFindWrap .tabContent > div {width:50%;padding-left:3.5rem;box-sizing:border-box;}
 
 	.idpwFindWrap .radio {margin:0 0 .5rem -3rem;font-size:2.4rem;}
@@ -122,6 +129,9 @@
 
 	.afterSlide .bx-pager {position:absolute;top:-3rem;right:1.5rem;}
 	.afterSlide .bx-pager button {width:1.5rem;height:1.5rem;margin:0 0 0 .5rem;}
+
+	.evtList {border-width:.2rem;padding:4rem 0 0;}
+	.evtList li {width:48%;margin:0;padding:0 1rem 2rem;box-sizing:border-box;}
 
 	.loginWrap {width:100%;border-width:.8rem;box-sizing:border-box;}
 	.loginWrap > section {width:48%;margin:0;padding:4.5rem 1rem;box-sizing:border-box;}
@@ -204,6 +214,8 @@
 }
 
 @media all and (max-width:560px) {
+	.evtList li {width:100%;padding:0 0 2rem;}
+
 	.loginWrap {border-width:.4rem;}
 	.loginWrap > section {width:100%;margin:0;padding:2rem 1rem;}
 	.loginWrap .subTitle {margin:0 0 1.5rem;font-size:1.8rem;}
