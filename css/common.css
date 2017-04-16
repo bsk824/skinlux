@@ -216,13 +216,32 @@
 .bbsWrite th, .bbsWrite td {border-bottom:1px solid #b7b7bb;}
 .bbsWrite th {padding:14px 0;background:#f9f9f9;color:#797979;font-size:16px;}
 .bbsWrite td {padding:10px 12px;}
+.bbsWrite td label {display:inline-block;}
+.bbsWrite .phone select {width:70px;}
+.bbsWrite .phone input.txt {width:62px;}
+.bbsWrite .email select {width:120px;}
+.bbsWrite .email input.txt {width:100px;}
+.bbsWrite .inputTxt input.txt {width:230px;}
 .bbsWrite .inputSelect select {width:310px;}
+.bbsWrite .inputSelect2 select {width:240px;}
 .bbsWrite [class*="input"] label {display:inline-block;}
 .bbsWrite .inputRadio label {margin-right:15px;}
 .bbsWrite .inputRadio2 label {margin-right:40px;}
 .bbsWrite .inputChk label {margin-right:60px;}
 .bbsWrite .inputTextarea textarea {width:950px;height:110px;}
 .bbsWrite .inputTextarea2 textarea {width:950px;height:200px;}
+.bbsWrite .inputCal {margin:0 10px 0 0;}
+.bbsWrite .inputCal input.txt {width:230px;}
+.bbsWrite .inputCal select {width:220px;}
+.bbsWrite .ex {display:inline-block;color:#ff8d13;}
+
+.bbsWritePravicy {margin:40px 0 0;}
+.bbsWritePravicy h1 {margin:0 0 10px;color:#3f3f3f;font-size:16px;line-height:1;}
+.bbsWritePravicy .pravicy {overflow:auto;padding:15px 20px;border:1px solid #c6c6c6;}
+.bbsWritePravicy .alert {padding:15px 20px;background:#f2f2f4;font-size:13px;color:#84848c;}
+.bbsWritePravicy .pravicyChk {margin:10px 0 0;text-align:center;}
+
+.datepicker {background:url('../images/bg_cal.png') no-repeat 100% 50%;background-size:auto 100%;}
 
 /* pagination*/
 .pagination {margin:30px 0 0;text-align:center;}
@@ -334,6 +353,20 @@ hr {margin:50px 0;}
 	.bbsWrite .inputChk label {margin-right:1rem;}
 	.bbsWrite .inputTextarea textarea {height:11rem;}
 	.bbsWrite .inputTextarea2 textarea {height:20rem;}
+	.bbsWrite .phone, .bbsWrite .email {display:table;width:100%;}
+	.bbsWrite .phone span, .bbsWrite .email span {display:table-cell;width:33%;}
+	.bbsWrite .phone .sym, .bbsWrite .email .sym {width:auto;padding:0 .2rem;}
+	.bbsWrite .phone select, .bbsWrite .phone input.txt, .bbsWrite .email select, 
+	.bbsWrite .email input.txt {width:100%;}
+	.bbsWrite .email select {margin:0 0 0 .5rem;}
+	.bbsWrite .inputTxt input.txt,
+	.bbsWrite .inputSelect2 select {width:100%;}
+
+	.bbsWritePravicy {margin:4rem 0 0;}
+	.bbsWritePravicy h1 {margin:0 0 1rem;font-size:1.6rem;}
+	.bbsWritePravicy .pravicy {padding:1.5rem 2rem;border-width:.1rem;}
+	.bbsWritePravicy .alert {padding:1.5rem 2rem;font-size:1.3rem;}
+	.bbsWritePravicy .pravicyChk {margin:1rem 0 0;}
 
 	/* pagination*/
 	.pagination {margin:3rem 0 0;}
@@ -416,6 +449,11 @@ hr {margin:50px 0;}
 	.bbsWrite td {display:block;position:relative;width:auto;min-height:5rem;padding:1rem 1rem 1rem 13rem;background:#fff;box-sizing:border-box;vertical-align:middle;}
 	.bbsWrite td:before {content:"";position:absolute;top:0;left:0;bottom:0;width:12rem;background:#f9f9f9;}
 	.bbsWrite [class*="inputRadio"] {padding-top:1.3rem;}
+	
+	.bbsWrite .inputCal {margin:0;}
+	.bbsWrite .inputCal span {display:block;}
+	.bbsWrite .inputCal span + span {margin:.5rem 0 0;}
+	.bbsWrite .inputCal input.txt, .bbsWrite .inputCal select {width:100%;}
 }
 @media all and (max-width:560px) {
 	/* title */
@@ -423,9 +461,9 @@ hr {margin:50px 0;}
 	[class*="pageTitle"] span {margin:.2rem 0 0;font-size:1.4rem;}
 	.pageTitle2 {padding:4rem 0 2rem;}
 
-	.bbsWrite th {width:8rem;padding:1rem 0 0;font-size:1.4rem;}
-	.bbsWrite td {min-height:5rem;padding:1rem 1rem 1rem 9rem;}
-	.bbsWrite td:before {width:8rem;}
+	.bbsWrite th {width:9rem;padding:1rem 0 0;font-size:1.4rem;}
+	.bbsWrite td {min-height:5rem;padding:1rem 1rem 1rem 10rem;}
+	.bbsWrite td:before {width:9rem;}
 	.bbsWrite td .tip {display:block;}
 
 	/* table */

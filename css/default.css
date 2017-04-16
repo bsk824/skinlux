@@ -46,7 +46,7 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 .radio input + span:before {content:"";display:inline-block;display:none\9;width:25px;height:25px;margin:0 4px 0 0;vertical-align:middle;background:url('../images/icon_pack.png') no-repeat -30px -41px;}
 .radio input:checked + span:before {background-position:-55px -41px;}
 
-.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;}
+.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;z-index:10!important;}
 .ui-datepicker .ui-datepicker-header {position:relative;padding:5px 0;text-align:center;}
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {position:absolute;top:10px;font:0/0 a!important;}
