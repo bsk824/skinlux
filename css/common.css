@@ -52,6 +52,9 @@
 #footer .sns .insta {background-position:-114px 0;}
 #footer .sns .kakao {background-position:-156px 0;}
 
+@media all and (max-width:1120px) {
+    .content {max-width:100%;}
+}
 @media all and (min-width:1024px) {
 	#gnb {display:block!important;}
 }

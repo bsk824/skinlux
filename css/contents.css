@@ -7,6 +7,7 @@
 .mainSlide .bx-controls {position:absolute;right:0;bottom:25px;left:0;text-align:center;}
 .mainSlide .bx-controls button {width:16px;height:16px;margin:0 4px;background:#282f32;border:4px solid #282f32;border-radius:50%;font:0/0 a!important;}
 .mainSlide .bx-controls button.active {background:none;}
+
 .mainNotice {position:relative;width:1120px;margin:0 auto;line-height:44px;border-bottom:1px solid #dfdcd6;}
 .mainNotice a {display:block;padding:0 0 0 90px;font-size:18px;color:#1a1a1a;}
 .mainNotice a .date {position:absolute;right:40px;}
@@ -40,10 +41,10 @@
 .mainProgram .bx-viewport {margin:40px 0 0;}
 .mainProgram li a {display:block;margin:0 12px;padding:10px 20px 20px;background:#fff;color:#292929;}
 .mainProgram li a > * {display:block;}
-.mainProgram .thumb {display:block;height:178px;margin:0 -10px 15px;}
-.mainProgram .thumb img {width:100%;}
+.mainProgram .thumb {overflow:hidden;height:178px;margin:0 -10px 15px;}
+.mainProgram .thumb img {height:100%;}
 .mainProgram .tit {font-size:20px;}
-.mainProgram .txt {height:42px;overflow:hidden;font-size:15px;}
+.mainProgram .txt {height:42px;font-size:15px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;word-wrap:break-word;-webkit-line-clamp:2;}
 .mainProgram .price {margin:30px 0 0;line-height:1;font-size:15px;}
 .mainProgram .price b {margin:0 5px 0 0;color:#f77219;font-size:34px;font-weight:bold;letter-spacing:-2px;}
 .mainProgram .bx-controls-direction {position:absolute;top:50%;left:0;right:0;margin:-50px 0 0;}
@@ -102,6 +103,97 @@
 .mainBot .facebook h1:before {content:"";display:inline-block;width:18px;height:28px;margin:0 0 0 18px;background:url('../images/icon_pack.png') no-repeat -117px -41px;vertical-align:middle;}
 .mainBot .facebook h1 span {display:inline-block;margin:0 0 0 16px;padding:0 0 0 15px;vertical-align:middle;border-left:1px solid #6b81b7;}
 .mainBot .facebook .inner {padding:20px 25px;}
+@media all and (max-width:1120px) {
+    .mainSlide li a {height:35rem;background-size:auto 100%;}
+    .mainSlide .bx-controls {bottom:2.5em;}
+    .mainSlide .bx-controls button {width:1.6rem;height:1.6rem;margin:0 .4rem;border-width:.4rem;}
+
+    .mainNotice {width:100%;line-height:4.4rem;border-width:.1rem;}
+    .mainNotice a {padding:0 0 0 4rem;font-size:1.8rem;}
+    .mainNotice a .date {right:4rem;}
+
+    .mainSlide2 {width:100%;}
+    .mainSlide2 li a {height:27rem;}
+    .mainSlide2 .bx-pager {bottom:3rem;left:11.5rem;}
+    .mainSlide2 .bx-pager button {width:.8rem;height:.8re,;margin:0 1.8rem 0 0;border-width:.1rem;}
+    .mainSlide2 .bx-controls-direction {display:none;}
+    .mainSlide2 .bx-controls-auto {bottom:3rem;left:9.3rem;}
+    .mainSlide2 .bx-controls-auto .bx-start {border-width:.4rem;border-left-width:.8rem;}
+    .mainSlide2 .bx-controls-auto .bx-stop {width:.8rem;height:.8rem;}
+    .mainSlide2 .bx-controls-auto .bx-stop:before,
+    .mainSlide2 .bx-controls-auto .bx-stop:after {width:.3rem;height:.8rem;}
+
+    .mainRealStory {border-width:.1rem;}
+    .mainRealStory img {width:100%;max-width:100%;}
+
+    .mainTit {padding:5rem 0 .5rem;font-size:3.6rem;}
+    .mainTxt {font-size:1.6rem;}
+
+    .mainProgram {padding:0 0 7rem;}
+    .mainProgram .bx-wrapper {width:90%;margin:0 auto;}
+    .mainProgram .bx-viewport {margin:4rem 0 0;}
+    .mainProgram li a {margin:0 .6rem;padding:1rem 2rem 2rem;}
+    .mainProgram .thumb {height:16rem;margin:0 -1rem 1.5rem;}
+    .mainProgram .tit {font-size:1.8rem;}
+    .mainProgram .txt {height:4.2rem;font-size:1.5rem;}
+    .mainProgram .price {margin:2rem0;font-size:1.5rem;}
+    .mainProgram .price b {margin:0 .5rem 0 0;font-size:3rem;}
+    .mainProgram .bx-controls-direction {margin:-2.5rem 0 0;}
+    .mainProgram .bx-controls-direction button {right:-3.5rem;width:2.5rem;height:5rem;background-size:auto 5rem;}
+    .mainProgram .bx-controls-direction button:first-child {right:auto;left:-3.5rem;background-position:0 0;}
+
+    .mainBeforeAfter ul {width:98rem;margin:2.5rem auto 9rem;}
+    .mainBeforeAfter ul li > img {margin:-.1rem;border-width:.1rem;}
+    .mainBeforeAfter ul li > a {top:-1.7rem;left:-1.7rem;}
+    .mainBeforeAfter ul li > a img {border-width:.3rem;}
+    .mainBeforeAfter ul li > a:before {height:4rem;}
+    .mainBeforeAfter ul li > a span {height:4rem;padding:0 1.5rem;line-height:4rem;font-size:1.2rem;}
+    .mainBeforeAfter ul li > a span b {font-size:2rem;}
+
+    .mainEtc {height:15rem;margin:9rem 0 0;}
+    .mainEtc .content {padding:0;}
+    .mainEtc .link {width:50%;}
+    .mainEtc .link a {width:25%;height:15rem;font-size:1.8rem;}
+    .mainEtc .link a:before {width:6.2rem;height:5.6rem;margin:2.4rem auto;background-size:50rem;}
+    .mainEtc .link a.reserv1:before {background-position:0 -7.5rem;}
+    .mainEtc .link a.reserv2:before {background-position:-6.2rem -7.5rem;}
+    .mainEtc .link a.map:before {background-position:-12.4rem -7.5rem;}
+    .mainEtc .link a.info:before {background-position:-18.6rem -7.5rem;}
+    .mainEtc .contact {width:25%;}
+    .mainEtc .contact:before {width:6.2rem;height:6.2rem;margin:1.5rem auto 1rem;background-size:50rem;background-position:0 -13.1rem;}
+    .mainEtc .contact strong {font-size:2.6rem;}
+    .mainEtc .time {width:25%;font-size:1.4rem;}
+    .mainEtc .time h1 {padding:2rem 0 .5rem;margin:0 0 1rem;border-width:.1rem;font-size:1.6rem;}
+
+    .mainBot {width:100%;height:32rem;margin:0 auto -11rem;}
+    .mainBot .star {width:25%;}
+    .mainBot .star h1 {padding:.5rem 0 0;line-height:6rem;font-size:2.2rem;}
+    .mainBot .star img {width:100%;}
+    .mainBot .selfChk {width:25%;padding:0 2.2rem;box-sizing:border-box;}
+    .mainBot .selfChk h1 {margin:0 0 1.5rem;}
+    .mainBot .selfChk h1 span {padding:2.5rem 0 1rem;border-width:.1rem;font-size:2.2rem;}
+    .mainBot .selfChk .dataInput {margin:0 0 .6rem;font-size:1.4rem;}
+    .mainBot .selfChk .dataInput span {width:10.4rem;margin:0 0 0 1.5rem;border-width:.1rem;}
+    .mainBot .selfChk .dataInput input.txt {width:6.5rem;height:3.8rem;}
+    .mainBot .selfChk .btn {height:5rem;border-width:.2rem;font-size:1.8rem;}
+    .mainBot .selfChk .result {margin:.8rem 0 0;}
+    .mainBot .selfChk .result span {font-size:2.4rem;line-height:7rem;}
+    .mainBot .after {width:25%;height:32rem;border-width:.1rem;box-sizing:border-box;}
+    .mainBot .after h1 {margin:0 0 1.5rem;}
+    .mainBot .after h1 span {padding:2.5rem 0 1rem;border-width:.1rem;font-size:2.2rem;}
+    .mainBot .after ul {padding:0 3.5rem;}
+    .mainBot .after li {margin:.5rem 0;padding:0 0 0 .9rem;}
+    .mainBot .after li:before {top:1rem;width:.2rem;height:.2rem;}
+    .mainBot .facebook {width:25%;height:32rem;}
+    .mainBot .facebook h1 {height:4.3rem;padding:1rem 0 0;}
+    .mainBot .facebook h1:before {width:1.8rem;height:2.8rem;margin:0 0 0 1.5rem;background-position:-11.7rem -4.1rem;background-size:50rem;}
+    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;}
+    .mainBot .facebook .inner {overflow:hidden;padding:2rem 2.5rem;}
+}
+@media all and (max-width:1023px) {
+
+}
+
 /* //main */
 
 .afterSlide {position:relative;margin:0 -15px;}
