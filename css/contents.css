@@ -32,6 +32,7 @@
 .mainSlide2 .bx-controls-auto .bx-stop:after {right:0;}
 
 .mainRealStory {text-align:center;border-top:1px solid #ddd;}
+.mainRealStory .imgMo {display:none;}
 
 .mainTit {padding:50px 0 5px;color:#1a1a1a;font-size:36px;line-height:1;text-align:center;font-weight:bold;}
 .mainTxt {color:#6c6c6c;font-size:16px;text-align:center;font-weight:bold;}
@@ -80,8 +81,9 @@
 
 .mainBot {width:1120px;height:320px;margin:0 auto -110px;}
 .mainBot .star {position:relative;float:left;width:280px;height:320px;background:#efefef;text-align:center;}
-.mainBot .star h1 {padding:5px 0 0;line-height:60px;color:#1a1a1a;font-size:22px;}
-.mainBot .star a {position:absolute;top:65px;right:0;bottom:0;left:0;font:0/0 a!important;}
+.mainBot .star a {display:block;height:320px;}
+.mainBot .star a span {padding:5px 0 0;line-height:60px;color:#1a1a1a;font-size:22px;font-weight:bold;}
+.mainBot .star a:after {content:"";position:absolute;top:65px;right:0;bottom:0;left:0;background:url('../images/img_main_star.jpg') no-repeat 50% 50%;}
 .mainBot .selfChk {float:left;width:236px;padding:0 22px;}
 .mainBot .selfChk h1 {margin:0 0 15px;text-align:center;}
 .mainBot .selfChk h1 span {display:inline-block;padding:25px 0 10px;border-bottom:1px solid #1a1a1a;color:#1a1a1a;font-size:22px;line-height:1;}
@@ -94,7 +96,7 @@
 .mainBot .selfChk .result span:first-child {background:#20292e;}
 .mainBot .after {float:left;width:278px;height:320px;border-left:1px solid #ccc;border-right:1px solid #ccc;}
 .mainBot .after h1 {margin:0 0 15px;text-align:center;}
-.mainBot .after h1 span {display:inline-block;padding:25px 0 10px;border-bottom:1px solid #1a1a1a;color:#1a1a1a;font-size:22px;line-height:1;}
+.mainBot .after h1 a {display:inline-block;padding:25px 0 10px;border-bottom:1px solid #1a1a1a;color:#1a1a1a;font-size:22px;line-height:1;}
 .mainBot .after ul {padding:0 35px;}
 .mainBot .after li {position:relative;margin:5px 0;padding:0 0 0 9px;}
 .mainBot .after li:before {content:"";position:absolute;top:10px;left:0;width:2px;height:2px;background:#1a1a1a;line-height:2;}
@@ -125,7 +127,7 @@
     .mainSlide2 .bx-controls-auto .bx-stop:after {width:.3rem;height:.8rem;}
 
     .mainRealStory {border-width:.1rem;}
-    .mainRealStory img {width:100%;max-width:100%;}
+    .mainRealStory .imgPc {width:100%;max-width:100%;}
 
     .mainTit {padding:5rem 0 .5rem;font-size:3.6rem;}
     .mainTxt {font-size:1.6rem;}
@@ -167,9 +169,11 @@
     .mainEtc .time h1 {padding:2rem 0 .5rem;margin:0 0 1rem;border-width:.1rem;font-size:1.6rem;}
 
     .mainBot {width:100%;height:32rem;margin:0 auto -11rem;}
-    .mainBot .star {width:25%;}
-    .mainBot .star h1 {padding:.5rem 0 0;line-height:6rem;font-size:2.2rem;}
-    .mainBot .star a {background-size:cover;}
+    
+    .mainBot .star {width:25%;height:32rem;}
+    .mainBot .star a {height:100%;}
+    .mainBot .star a span {padding:.5rem 0 0;line-height:6rem;font-size:2.2rem;}
+    .mainBot .star a:after {content:"";position:absolute;top:65px;right:0;bottom:0;left:0;background:url('../images/img_main_star.jpg') no-repeat 50% 50%;background-size:cover;}
     .mainBot .selfChk {width:25%;padding:0 2.2rem;box-sizing:border-box;}
     .mainBot .selfChk h1 {margin:0 0 1.5rem;}
     .mainBot .selfChk h1 span {padding:2.5rem 0 1rem;border-width:.1rem;font-size:2.2rem;}
@@ -181,7 +185,7 @@
     .mainBot .selfChk .result span {font-size:2.4rem;line-height:7rem;}
     .mainBot .after {width:25%;height:32rem;border-width:.1rem;box-sizing:border-box;}
     .mainBot .after h1 {margin:0 0 1.5rem;}
-    .mainBot .after h1 span {padding:2.5rem 0 1rem;border-width:.1rem;font-size:2.2rem;}
+    .mainBot .after h1 a {padding:2.5rem 0 1rem;border-width:.1rem;font-size:2.2rem;}
     .mainBot .after ul {padding:0 3.5rem;}
     .mainBot .after li {margin:.5rem 0;padding:0 0 0 .9rem;}
     .mainBot .after li:before {top:1rem;width:.2rem;height:.2rem;}
@@ -222,17 +226,16 @@
     .mainEtc .link a.reserv2:before {background-position:-3.1rem -3.7rem;}
     .mainEtc .link a.map:before {background-position:-6.2rem -3.7rem;}
     .mainEtc .link a.info:before {background-position:-9.3rem -3.7rem;}
-    
-    .mainEtc .contact {width:20%;}
+    .mainEtc .contact {width:24%;}
     .mainEtc .contact:before {width:3.1rem;height:3.1rem;margin:1rem auto;background-size:25rem;background-position:0 -6.5rem;}
     .mainEtc .contact strong {font-size:2rem;}
-    .mainEtc .time {width:30%;font-size:1.2rem;}
+    .mainEtc .time {width:26%;font-size:1.2rem;}
     .mainEtc .time h1 {padding:1rem 0 .5rem;margin:0 0 .5rem;font-size:1.4rem;}
     
     .mainBot {height:25rem;}
     .mainBot .star {height:25rem;}
-    .mainBot .star h1 {line-height:4rem;font-size:1.6rem;}
-    .mainBot .star a {top:4.5rem;}
+    .mainBot .star a span {line-height:4rem;font-size:1.6rem;}
+    .mainBot .star a:after {top:4.5rem;}
     .mainBot .selfChk {padding:0 1rem;}
     .mainBot .selfChk h1 {margin:0 0 1rem;}
     .mainBot .selfChk h1 span {padding:1.5rem 0 1rem;font-size:1.4rem;}
@@ -244,13 +247,71 @@
     .mainBot .selfChk .result span {font-size:1.6rem;line-height:6rem;}
     .mainBot .after {height:25rem;}
     .mainBot .after h1 {margin:0 0 1rem;}
-    .mainBot .after h1 span {padding:1.5rem 0 1rem;font-size:1.4rem;}
+    .mainBot .after h1 a {padding:1.5rem 0 1rem;font-size:1.4rem;}
     .mainBot .after ul {padding:0 1rem;}
     .mainBot .after li {margin:0;}
-    .mainBot .facebook {width:25%;height:25rem;overflow:hidden;}
+    .mainBot .facebook {height:25rem;overflow:hidden;}
     .mainBot .facebook h1 {height:4rem;padding:.5rem 0 0;}
-    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;font-size:1.4rem;}
+    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;font-size:1.3rem;}
     .mainBot .facebook .inner {overflow:hidden;padding:2rem 2.5rem;}
+}
+@media all and (max-width:767px) {
+    .mainSlide li a {height:23rem;}
+        
+    .mainNotice {line-height:4rem;}
+    .mainNotice a {padding:0 0 0 1rem;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+    .mainNotice a .date {display:none;}
+    
+    .mainSlide2 li a {height:15rem;}
+    .mainSlide2 .bx-pager {bottom:1.5rem;}
+    .mainSlide2 .bx-controls-auto {bottom:1.5rem;}
+    
+    .mainProgram .bx-wrapper {width:95%;}
+    .mainProgram .thumb {height:auto;margin:0 0 1rem;}
+    .mainProgram .thumb img {width:100%;}
+    .mainProgram .tit {font-size:1.5rem;}
+    .mainProgram .txt {height:3.6rem;font-size:1.2rem;}
+    .mainProgram .price {margin:2rem 0 0;font-size:1.2rem;}
+    .mainProgram .price b {font-size:2rem;}
+    .mainProgram .bx-controls {display:none;}
+    
+    .mainBeforeAfter ul li {width:33.3%;}
+    
+    .mainEtc .link {width:100%;}
+    
+    .mainEtc .contact, .mainEtc .time {display:none;}
+    .mainBot {position:relative;height:auto;padding:5rem 0 0;}
+    .mainBot:after {content:"";display:block;clear:both;}
+    .mainBot .star, .mainBot .after {position:absolute;top:0;width:50%;height:5rem;}
+    .mainBot .star {background:#fff;left:0;}
+    .mainBot .star a {padding:0;line-height:5rem;font-size:1.8rem;}
+    .mainBot .star a:after {display:none;}
+    .mainBot .after {right:0;}
+    .mainBot .after h1 {margin:0;height:100%;}
+    .mainBot .after h1 a {display:block;line-height:5rem;padding:0;font-size:1.8rem;border:0;}
+    .mainBot .after ul {display:none;}
+    
+    .mainBot .selfChk, .mainBot .facebook {display:none;}
+}
+@media all and (max-width:560px) {
+    .mainSlide li a, .mainSlide2 li a {height:auto;background:none;}
+    .mainSlide li a img, .mainSlide2 li a img {display:block;width:100%;}
+    .mainSlide2 .bx-controls {display:none;}
+    .mainRealStory .imgPc {display:none;}
+    .mainRealStory .imgMo {display:block;width:100%;}
+    
+    .mainProgram {padding:0 0 2rem;}
+    .mainProgram .bx-viewport {margin:1.5rem 0 0;}
+        
+    .mainBeforeAfter ul li > a span {height:3rem;line-height:3rem;padding:0 .5rem;font-size:1.1rem;}
+    .mainBeforeAfter ul li > a span b {font-size:1.2rem;}
+    .mainBeforeAfter ul li > a:before {height:3rem;}
+    
+    .mainTit {padding:2rem 0 .5rem;font-size:2rem;}
+    .mainTxt {font-size:1.4rem;}
+    
+    .mainEtc {margin:5rem 0 0;}
+    .mainBot {margin:0 0 -5rem;}
 }
 
 /* //main */
