@@ -188,7 +188,7 @@
     .mainBot .facebook {width:25%;height:32rem;}
     .mainBot .facebook h1 {height:4.3rem;padding:1rem 0 0;}
     .mainBot .facebook h1:before {width:1.8rem;height:2.8rem;margin:0 0 0 1.5rem;background-position:-11.7rem -4.1rem;background-size:50rem;}
-    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;}
+    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;font-size:1.8rem;}
     .mainBot .facebook .inner {overflow:hidden;padding:2rem 2.5rem;}
 }
 @media all and (max-width:1023px) {

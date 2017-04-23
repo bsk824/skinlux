@@ -40,7 +40,7 @@
 #footer section {position:relative;max-width:1120px;margin:0 auto;padding:45px 0 40px;}
 #footer h1 {color:#414347;font:28px/1 Arial;font-weight:bold;letter-spacing:-1px;}
 #footer .privacy {position:absolute;top:48px;left:540px;}
-#footer .privacy a {position:relative;color:#919191;}
+#footer .privacy a {position:relative;display:inline-block;color:#919191;}
 #footer .privacy a + a {margin:0 0 0 35px;}
 #footer .privacy a + a:before {content:"";position:absolute;top:2px;left:-18px;width:1px;height:12px;background:#919191;}
 #footer .hospInfo {width:760px;margin:10px 0 0;}
