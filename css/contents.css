@@ -145,7 +145,7 @@
 
     .mainBeforeAfter ul {width:98.6rem;margin:2.5rem auto 0;}
     .mainBeforeAfter ul li > img {margin:-.1rem 0 0 -.1rem;border-width:.1rem;}
-    .mainBeforeAfter ul li > a {top:-1.7rem;left:-1.7rem;}
+    .mainBeforeAfter ul li > a {top:-1.8rem;left:-1.8rem;}
     .mainBeforeAfter ul li > a img {border-width:.3rem;}
     .mainBeforeAfter ul li > a:before {height:4rem;}
     .mainBeforeAfter ul li > a span {height:4rem;padding:0 1.5rem;line-height:4rem;font-size:1.2rem;}
@@ -188,7 +188,7 @@
     .mainBot .facebook {width:25%;height:32rem;}
     .mainBot .facebook h1 {height:4.3rem;padding:1rem 0 0;}
     .mainBot .facebook h1:before {width:1.8rem;height:2.8rem;margin:0 0 0 1.5rem;background-position:-11.7rem -4.1rem;background-size:50rem;}
-    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;font-size:1.8rem;}
+    .mainBot .facebook h1 span {margin:0 0 0 1.1rem;padding:0 0 0 1.5rem;border-width:.1rem;font-size:1.6rem;}
     .mainBot .facebook .inner {overflow:hidden;padding:2rem 2.5rem;}
 }
 @media all and (max-width:1023px) {
