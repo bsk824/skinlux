@@ -53,7 +53,7 @@
 #footer .sns .kakao {background-position:-156px 0;}
 
 @media all and (max-width:1120px) {
-    .content {max-width:100%;}
+    .content {max-width:100%;padding:0 2rem;}
 }
 @media all and (min-width:1024px) {
 	#gnb {display:block!important;}

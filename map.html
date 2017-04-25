@@ -86,17 +86,85 @@
 	</div>
 
 	<div id="container">
-	    <section class="content">
-	        <h1 class="pageTitle">위치안내</h1>
-	        <div>
-	            <h2>압구정점</h2>
-	            <p>
-	                <span>서울 강남구 논현로 826 이가빌딩 2층(신사동 592-4)</span>
-	                <span>대표전화 : 02)547-0175</span>
-	                <span>FAX : 02)547-6275</span>
-	            </p>
-	        </div>
-	    </section>
+		<section class="content">
+			<h1 class="pageTitle">위치안내</h1>
+            <h2 class="mapTit">압구정점</h2>
+            <p class="mapInfo">
+                <span>서울 강남구 논현로 826 이가빌딩 2층(신사동 592-4)</span>
+                <span>대표전화 : 02)547-0175</span>
+                <span>FAX : 02)547-6275</span>
+            </p>
+            <div class="map">
+                <!-- * Daum 지도 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1493121828123" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1493121828123",
+                    "key" : "he7b"
+                }).render();
+                </script>
+            </div>
+            <table class="mapTable">
+                <caption>진료 과목, 시간 및 오시는 길 안내</caption>
+                <colgroup>
+                    <col style="width:240px;">
+                    <col>
+                </colgroup>
+                <tr>
+                    <th scope="row"><b>진료과목</b></th>
+                    <td>
+                        스테로이드 부작용 / 아토피/건선/ 여드름 /안면홍조/지루성피부염/ 두드러기<br>
+                        기타진료과목 비만/항노화클리닉
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><b>진료시간</b></th>
+                    <td>
+                        평일(월~금) : 오전 10:30~오후 8:00<br>
+                        토요일 : 오전 10:00~오후 3:00<br>
+                        점심시간 : 오후 1:00~오후 2:00 / 일요일 및 공휴일 휴진
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><b>버스 이용시</b></th>
+                    <td>
+                        파랑(간선버스) : 145, 147, 361, 362, 472<br>
+                        초록(지선버스) : 1411, 2255, 4417, 3422, 4312, 4411, 4418<br>
+                        노랑(순환버스) : 41<br>
+                        공항버스 : 606
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><b>지하철 이용시</b></th>
+                    <td>
+                       지하철 3호선 압구정역 하차. 3번출구 (CGV 방향 직진) 보도 200m(함흥냉면건물 2층)<br>
+                       (고속버스터미널 이용시 - 강남고속버스터미널, 남부터미널에서 지하철 3호선 탑승후 압구정역 하차)
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><b>자가용 이용시<span>(건물내 주차가능)</span></b></th>
+                    <td>
+                       <dl>
+                           <dt>신사역에서 올때</dt>
+                           <dd>신사역에서 을지병원방향으로 직진--> 을지병원 사거리에서 동호대교 방향으로 좌회전후 200m 직진</dd>
+                           <dt>압구정역에서 올때</dt>
+                           <dd>압구정역 현대백화점 사거리에서 을지병원 사거리(학동역 방향)으로 직진 --> 현대자동차 대리점 앞 U턴</dd>
+                           <dt>역삼동 방향(학동역)에서 올때</dt>
+                           <dd>을지병원 사거리에서 동호대교 방향으로 직진후 200m</dd>
+                       </dl>
+                    </td>
+                </tr>
+            </table>
+		</section>
 	</div>
 	<footer id="footer">
 		<section>

@@ -379,7 +379,7 @@
 .joinField .btnWrap {margin:18px 0 0;}
 .joinField .btnWrap .btnType1 {width:425px;color:#fff;font-size:22px;}
 .joinField .btnWrap div {margin:0 -5px;}
-.joinField .btnWrap span {float:left;width:50%;}
+.joinField .btnWrap span {float:left;width:50%;margin:0;}
 .joinField .btnWrap span a {display:block;margin:10px 5px 0;}
 
 .idpwFindWrap .tabContent > div {float:left;width:505px;padding-left:35px;}
@@ -404,8 +404,25 @@
 .idpwFindWrap fieldset.disable .row b {color:#ccc;}
 .idpwFindWrap .btnWrap .btnType1 {width:298px;font-size:22px;color:#fefefe;}
 
+.mapTit {padding:35px 0 0;border-top:2px solid #5f5f5f;color:#2a2a2a;text-align:center;font-size:36px;line-height:1;}
 
-@media all and (max-width:1200px) {
+.mapInfo {margin:15px 0;color:#2a2a2a;text-align:center;font-size:20px;}
+.mapInfo span {display:inline-block;margin:0 12px;}
+
+.map .root_daum_roughmap {width:100%;height:455px;}
+.map .root_daum_roughmap .wrap_map {height:100%;}
+
+.mapTable {margin:35px 0 0;}
+.mapTable th {padding:40px 0 0;vertical-align:top;}
+.mapTable th b {display:block;padding:20px 0;background:#e6ecec;color:#272727;font-size:24px;line-height:1.3;}
+.mapTable th b span {display:block;font-weight:normal;font-size:20px;}
+.mapTable td {padding:40px 0 0 35px;color:#2a2a2a;font-size:20px;}
+.mapTable tr:first-child th,
+.mapTable tr:first-child td {padding-top:0;}
+.mapTable td dt {font-weight:bold;}
+.mapTable td dt ~ dt {margin:20px 0 0;}
+
+@media all and (max-width:1120px) {
 	.afterSlide li .info span {margin:0 10px;}
 
 	.evtList {border-width:.2rem;padding:4rem 0 0;}
@@ -434,6 +451,20 @@
 	.idpwFindWrap fieldset .row .btnType2 {width:9.8rem;line-height:4.8rem;font-size:1.4rem;}
 	.idpwFindWrap .btnWrap {margin:5rem 0 0;}
 	.idpwFindWrap .btnWrap .btnType1 {width:29.8rem;font-size:2.2rem;}
+    
+    .mapTit {padding:3.5rem 0 0;border-width:.2rem;font-size:3.6rem;}
+
+    .mapInfo {margin:1.5rem 0;font-size:2rem;}
+    .mapInfo span {margin:0 1.2rem;}
+
+    .map .root_daum_roughmap {height:45.5rem;margin:0 auto;}
+
+    .mapTable {margin:3.5rem 0 0;}
+    .mapTable th {width:15rem;padding:4rem 0 0;}
+    .mapTable th b {padding:2rem 0;font-size:1.6rem;}
+    .mapTable th b span {font-size:1.5rem;}
+    .mapTable td {padding:4rem 0 0 2rem;font-size:1.4rem;}
+    .mapTable td dt ~ dt {margin:2rem 0 0;}
 
 }
 @media all and (max-width:1023px) {
@@ -470,16 +501,15 @@
 	.joinField .infoInput p {box-sizing:border-box;}
 	.joinField .infoInput p + p {margin:1rem 0 0;}
 	.joinField .infoInput .refer {margin:.5rem 0 3.5rem;padding:0 0 0 1.5rem;font-size:1.2rem;}
-	.joinField input.txt {width:100%;padding:1.3rem 1.5rem;}
+	.joinField input.txt {width:100%;height:auto;padding:1.3rem 1.5rem;}
 	.joinField .email {display:table;position:relative;width:100%;padding-right:6.5rem;}
 	.joinField .email * {float:none;}
 	.joinField .email span {display:table-cell;width:50%;}
 	.joinField .email .sym {width:auto;padding:0 .5rem;line-height:4rem;}
 	.joinField .email input.txt {width:100%;}
-	.joinField .email .btnType2 {top:.5rem;}
 	.joinField .idInput {position:relative;padding-right:6.5rem;}
 	.joinField .idInput input.txt {float:none;width:100%;}
-	.joinField .btnType2 {position:absolute;top:0;right:0;width:6rem;line-height:2.8rem;margin:0;}
+	.joinField .btnType2 {position:absolute;top:0;right:0;width:6rem;line-height:4rem;margin:0;}
 
 	.termsWrap p + p {margin:.5rem 0 0;}
 	.termsWrap table {margin:.5rem 0 0;border-width:.1rem;}
@@ -501,6 +531,14 @@
 	.idpwFindWrap fieldset .row .email,
 	.idpwFindWrap fieldset .row .phone {position:relative;display:block;padding:0 8rem 0 0;}
 	.idpwFindWrap fieldset .row .btnType2 {width:7rem;line-height:4.8rem;font-size:1.4rem;}
+    
+    .mapTit {padding:2rem 0 0;border-width:.2rem;font-size:2rem;}
+
+    .mapInfo {font-size:1.6rem;}
+    .mapInfo span {margin:0 .6rem;}
+
+    .map .root_daum_roughmap {height:30rem;}
+
 }
 @media all and (max-width:767px) {
 	.afterSlide {margin:0;}
@@ -529,9 +567,6 @@
 	.idpwFindWrap fieldset .row .phone select {height:3rem;}
 	.idpwFindWrap fieldset .row .btnType2 {line-height:2.6rem;font-size:1.2rem;}
 	.idpwFindWrap .btnWrap .btnType1 {width:29.8rem;font-size:2.2rem;}
-
-	.joinField .email .btnType2 {top:.6rem;}
-	.joinField .btnType2 {line-height:2.6rem;}
 }
 
 @media all and (max-width:560px) {
@@ -552,4 +587,19 @@
 	.joinField > div {padding:1rem;}
 	.joinField .btnWrap {display:block;}
 	.joinField .btnWrap > div a {padding-left:1.7rem;}
+	.joinField .btnType2 {line-height:3.8rem;}
+    
+    .mapTit {padding:2rem 0 0;border-width:.2rem;font-size:2rem;}
+
+    .mapInfo {font-size:1.3rem;}
+
+    .map .root_daum_roughmap {height:20rem;}
+
+    .mapTable {display:block;margin:0;}
+    .mapTable tr {display:block;}
+    .mapTable th {display:block;width:100%;margin:2rem 0 1rem;padding:0;}
+    .mapTable th b {padding:1rem 0;font-size:1.4rem;}
+    .mapTable th b span {display:inline-block;font-size:1.2rem;}
+    .mapTable td {display:block;padding:0;font-size:1.4rem;}
+    .mapTable td dt ~ dt {margin:1rem 0 0;}
 }
