@@ -8,8 +8,9 @@
 .mainSlide .bx-controls button {width:16px;height:16px;margin:0 4px;background:#282f32;border:4px solid #282f32;border-radius:50%;font:0/0 a!important;}
 .mainSlide .bx-controls button.active {background:none;}
 
-.mainNotice {position:relative;width:1120px;margin:0 auto;line-height:44px;border-bottom:1px solid #dfdcd6;}
-.mainNotice a {display:block;padding:0 0 0 90px;font-size:18px;color:#1a1a1a;}
+.mainNotice {width:1120px;height:44px;overflow:hidden;margin:0 auto;border-bottom:1px solid #dfdcd6;}
+.mainNotice li {line-height:44px;}
+.mainNotice a {position:relative;display:block;padding:0 0 0 90px;font-size:18px;color:#1a1a1a;}
 .mainNotice a .date {position:absolute;right:40px;}
 
 .mainSlide2 {position:relative;width:1120px;margin:0 auto;}
@@ -111,7 +112,8 @@
     .mainSlide .bx-controls {bottom:2.5em;}
     .mainSlide .bx-controls button {width:1.6rem;height:1.6rem;margin:0 .4rem;border-width:.4rem;}
 
-    .mainNotice {width:100%;line-height:4.4rem;border-width:.1rem;}
+    .mainNotice {width:100%;height:4.4rem;border-width:.1rem;}
+    .mainNotice li {line-height:4.4rem;}
     .mainNotice a {padding:0 0 0 4rem;font-size:1.8rem;}
     .mainNotice a .date {right:4rem;}
 
@@ -258,7 +260,8 @@
 @media all and (max-width:767px) {
     .mainSlide li a {height:23rem;}
         
-    .mainNotice {line-height:4rem;}
+    .mainNotice {height:4rem;}
+    .mainNotice li {line-height:4rem;}
     .mainNotice a {padding:0 0 0 1rem;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
     .mainNotice a .date {display:none;}
     
@@ -296,7 +299,9 @@
 @media all and (max-width:560px) {
     .mainSlide li a, .mainSlide2 li a {height:auto;background:none;}
     .mainSlide li a img, .mainSlide2 li a img {display:block;width:100%;}
+    
     .mainSlide2 .bx-controls {display:none;}
+    
     .mainRealStory .imgPc {display:none;}
     .mainRealStory .imgMo {display:block;width:100%;}
     
@@ -329,7 +334,7 @@
 .afterSlide li .info {display:block;margin:10px 0 0;color:#333;font-size:16px;}
 .afterSlide li .info span {display:inline-block;margin:0 20px;}
 .afterSlide li .info b {display:inline-block;position:relative;margin:0 0 0 20px;}
-.afterSlide li .info b:before {content:"";position:absolute;top:3px;left:-12px;height:12px;border-left:1px solid #595959;border-right:1px solid #c9c9c9;}
+.afterSlide li .info b:before {content:"";position:absolute;top:6px;left:-12px;height:12px;border-left:1px solid #595959;border-right:1px solid #c9c9c9;}
 
 .afterSlide .bx-pager {position:absolute;top:-30px;right:15px;}
 .afterSlide .bx-pager button {width:15px;height:15px;margin:0 0 0 5px;background:#c1c1c1;font:0/0 a!important;}

@@ -101,13 +101,64 @@
 				</li>
 			</ul>
 		</div>
-		<p class="mainNotice">
-			<a href="#">
-				<b>[공지사항]</b>
-				<span class="txt">2017년 스킨룩스 홈페이지가 새롭게 리뉴얼했습니다.</span>
-				<span class="date">2017.02.16</span>
-			</a>
-		</p>
+		<ul class="mainNotice">
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">1111111111111111.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">2222222222222222222.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">333333333333333333.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">4444444444444444.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">55555555555555555555.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">6666666666666666666666666.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">777777777777777777777777777.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		    <li>
+		        <a href="#">
+                    <b>[공지사항]</b>
+                    <span class="txt">88888888888888888888888.</span>
+                    <span class="date">2017.02.16</span>
+                </a>
+		    </li>
+		</ul>
 		<div class="mainSlide2">
 			<ul>
 				<li>
@@ -488,7 +539,7 @@
 			auto: true,
 			autoControls: true
 		});
-        var winW = $('window').width();
+        var winW = $(window).width();
         function slideItem4() {
             $('.mainProgram ul').bxSlider({
                 minSlides: 4,
@@ -515,7 +566,24 @@
             $('.mainBeforeAfter li:nth-of-type(6) ~ li').remove();
         }
         (winW > 767) ? slideItem4() : slideItem2();
-        
+        (function notice(){
+            var firstList = $('.mainNotice li:first-child'),
+                listLeng = $('.mainNotice li').length,
+                listH = firstList.height(),
+                count = 0,
+                up = 0;
+            $('.mainNotice').append(firstList.clone());
+            setInterval(function(){
+                count++;
+                up = listH * count;
+                firstList.animate({'margin-top':'-'+up},300,function(){
+                    if (count == listLeng) {
+                        firstList.css('margin-top','0');
+                        count = 0;
+                    }
+                });
+            },5000);
+        })();
 		(function listAct(){
 			var setListTime;
 			function setListAct() {
