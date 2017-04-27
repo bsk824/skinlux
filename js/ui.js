@@ -58,15 +58,25 @@ $(function() {
 
 function tabContent(obj) {
 	var $this = $(obj),
-		tapBtn = $this.find('a, button');
+		tabMenu = $this.find('a, button'),
+        tabBtn = $('.btnNav'),
+        winW = $(window).width();
 
-	tapBtn.on('click',function(){
+    tabBtn.on('click', function(){
+        var _this = $(this);
+        _this.toggleClass('active').next().slideToggle(200);
+    });
+	tabMenu.on('click',function(){
 		var _this = $(this);
-		
-		_this.parent().addClass('active').siblings().removeClass('active');
-		if (_this.attr('href')) {
-			$(_this.attr('href')).addClass('active').siblings().removeClass('active');
-		}
+        _this.parent().addClass('active').siblings().removeClass('active');
+        if (_this.attr('href')) {
+            $(_this.attr('href')).addClass('active').siblings().removeClass('active');
+        }
+		if (tabBtn.length && winW < 767){
+            var txt = _this.text();
+            tabBtn.text(txt).removeClass('active');
+            $this.slideUp(200);
+        }
 		return false;
 	});
 }

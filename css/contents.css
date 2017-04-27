@@ -318,8 +318,20 @@
     .mainEtc {margin:5rem 0 0;}
     .mainBot {margin:0 0 -5rem;}
 }
-
 /* //main */
+.fixedHead {width:1120px;margin:0 auto;}
+.fixed .fixedHead {position:fixed;top:0;left:0;right:0;background:#fff;z-index:10;}
+.fixed .clinicContent {padding:210px 0 0;}
+
+.clinicContent > section {display:none;}
+.clinicContent > section.active {display:block;}
+.clinicContent > section img {width:100%;}
+
+.clinicSlide {width:1120px;margin:0 auto;}
+.clinicSlide a {display:block;text-align:center;}
+.clinicSlide figure {display:inline-block;width:420px;margin:0 24px;}
+.clinicSlide img {width:100%;}
+.clinicSlide figcaption {padding:5px 0;background:#000;color:#fff;font-size:24px;}
 
 .afterSlide {position:relative;margin:0 -15px;}
 .afterSlide li {text-align:center;}
@@ -423,7 +435,16 @@
 .mapTable td dt ~ dt {margin:20px 0 0;}
 
 @media all and (max-width:1120px) {
-	.afterSlide li .info span {margin:0 10px;}
+    
+    .fixedHead {width:100%;}
+    .fixed .fixedHead {left:0;right:0;width:auto;padding:0 2rem;}
+    .fixed .clinicContent {padding:21rem 0 0;}
+    
+    .clinicSlide {width:100%;}
+    .clinicSlide figure {width:40%;margin:0 2.4rem;}
+    .clinicSlide figcaption {padding:.5rem 0;font-size:2.4rem;}
+    
+	.afterSlide li .info span {margin:0 1rem;}
 
 	.evtList {border-width:.2rem;padding:4rem 0 0;}
 	.evtList li {width:45%;margin:0;padding:0 2rem 4rem;}
@@ -468,6 +489,12 @@
 
 }
 @media all and (max-width:1023px) {
+    
+    .fixed .clinicContent {padding:15.6rem 0 0;}
+    
+    .clinicSlide figure {width:40%;margin:0 2.4rem;}
+    .clinicSlide figcaption {padding:.5rem 0;font-size:2rem;}
+
 	.afterSlide {margin:0 -1.5rem;}
 	.afterSlide li div {margin:0 1.5rem;padding:0 0 2rem;}
 	.afterSlide li .tit {font-size:2rem;line-height:4.6rem;}
@@ -541,6 +568,12 @@
 
 }
 @media all and (max-width:767px) {
+    .fixed .clinicContent {padding:15.6rem 0 0;}
+    .clinicContent .pc {display:none;}
+    .clinicContent .mo {display:block;}
+    .clinicSlide figure {width:40%;margin:0 1rem;}
+    .clinicSlide figcaption {font-size:2rem;}
+    
 	.afterSlide {margin:0;}
 	.afterSlide li div {margin:0;}
 	.afterSlide li div {padding:0 0 1rem;}
@@ -570,6 +603,8 @@
 }
 
 @media all and (max-width:560px) {
+    .fixed .fixedHead {padding:0 1rem;}
+    
 	.evtList li {width:100%;padding:0 0 2rem;}
 
 	.loginWrap {border-width:.4rem;}
