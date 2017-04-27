@@ -333,6 +333,17 @@
 .clinicSlide img {width:100%;}
 .clinicSlide figcaption {padding:5px 0;background:#000;color:#fff;font-size:24px;}
 
+.storyTab {margin:0 -12px 30px;}
+.storyTab:after {content:"";display:block;clear:both;}
+.storyTab span {float:left;width:25%;}
+.storyTab a {position:relative;display:block;margin:0 12px;}
+.storyTab a img {width:100%;}
+.storyTab .active a:after {content:"";position:absolute;top:0;right:0;bottom:0;left:0;border:2px solid #44a2b0;}
+
+.storyCont > section {display:none;}
+.storyCont > section.active {display:block;}
+.storyCont img {width:100%;}
+
 .afterSlide {position:relative;margin:0 -15px;}
 .afterSlide li {text-align:center;}
 .afterSlide li div {background:#f0f0f0;margin:0 15px;padding:0 0 20px;}
@@ -569,6 +580,7 @@
 }
 @media all and (max-width:767px) {
     .fixed .clinicContent {padding:15.6rem 0 0;}
+    
     .clinicContent .pc {display:none;}
     .clinicContent .mo {display:block;}
     .clinicSlide figure {width:40%;margin:0 1rem;}
@@ -604,6 +616,11 @@
 
 @media all and (max-width:560px) {
     .fixed .fixedHead {padding:0 1rem;}
+    
+    .storyTab {margin:0 -.5rem 1.5rem;}
+    .storyTab span {width:50%;}
+    .storyTab a {margin:.5rem;}
+    .storyTab .active a:after {border-width:.2rem;}
     
 	.evtList li {width:100%;padding:0 0 2rem;}
 
