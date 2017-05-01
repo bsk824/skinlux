@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/NanumGothic-Regular.eot);
+  src: url(../font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumGothic-Regular.woff2) format('woff2'),
+       url(../font/NanumGothic-Regular.woff) format('woff'),
+       url(../font/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NanumGothic-Bold.eot);
+  src: url(../font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumGothic-Bold.woff2) format('woff2'),
+       url(../font/NanumGothic-Bold.woff) format('woff'),
+       url(../font/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../font/NanumGothic-ExtraBold.eot);
+  src: url(../font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(../font/NanumGothic-ExtraBold.woff) format('woff'),
+       url(../font/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+* {margin:0;padding:0;}
+html,body {height:100%;}
+body {color:#444;font:12px/1.5 Nanum Gothic, Dotum, '돋움', sans-serif;-webkit-text-size-adjust:none;}
+a {color:#444;text-decoration:none;}
+ul, ol, li {list-style:none;}
+table {width:100%;border-collapse:collapse;border:0;}
+colgroup {background:none;}
+input, select, textarea, button {color:#444;vertical-align:middle;font:12px/1.5 Nanum Gothic, Dotum, '돋움', Sans-serif;}
+fieldset, img {border:0;}
+img {vertical-align:top;max-width:100%;}
+label, td img {vertical-align:middle;}
+legend, caption {visibility:hidden;width:0;font-size:0;line-height:0;text-indent:-5000px;}
+address, em {font-style:normal;}
+button {overflow:visible;cursor:pointer;background:none;border:0;}
+
+textarea {padding:0 5px;background:#fff;border:1px solid #ccc;resize:none;border-radius:1px;}
+select {padding:0 5px;border-radius:0;border:1px solid #ccc;}
+input.txt {line-height:1.1;padding:0 5px;border-radius:0;border:1px solid #ccc;}
+input.chk {width:13px;height:13px;vertical-align:-2px;}
+
+.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;}
+.ui-datepicker .ui-datepicker-header {position:relative;padding:5px 0;text-align:center;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {position:absolute;top:10px;font:0/0 a!important;}
+.ui-datepicker .ui-datepicker-prev {left:2px;border:6px solid transparent;border-right:6px solid #333;}
+.ui-datepicker .ui-datepicker-next {right:2px;border:6px solid transparent;border-left:6px solid #333;}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {border:0;background:none;}
+.ui-datepicker td span,
+.ui-datepicker td a {display:block;padding:5px;text-align:center;}
+.ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../images/btn_cal.gif) no-repeat;font:0/0 a!important;}
+
+@media all and (max-width:1023px) {
+	body, input, select, textarea, button {font-size:1.2rem;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+	textarea, input.txt {padding:0 .5rem;border-width:.1rem;}
+	select {padding:0 2.5rem 0 .5rem;background:#fff url(../images/bg_select.png) no-repeat 100% 0;background-size:auto 100%;}
+	input.chk {width:1.5rem;height:1.5rem;border:1px solid #ccc;}
+	input[type="radio"] {border-radius:50%;background:#fff url(../images/bg_radio.png) no-repeat;background-size:auto 100%;}
+	input[type="checkbox"] {background:#fff url(../images/bg_checkbox.png) no-repeat;background-size:auto 100%;}
+	input.chk:checked {background-position:-1.3rem 0;}
+}
+@media all and (max-width:561px) {
+	.ui-datepicker {width:24rem;border:.1rem solid #ccc;}
+	.ui-datepicker .ui-datepicker-header {padding:.5rem 0;}
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next {top:1rem;}
+	.ui-datepicker .ui-datepicker-prev {left:.2rem;border:.6rem solid transparent;border-right:.6rem solid #333;}
+	.ui-datepicker .ui-datepicker-next {right:.2rem;border:.6rem solid transparent;border-left:.6rem solid #333;}
+	.ui-datepicker td span,
+	.ui-datepicker td a {display:block;padding:.5rem;text-align:center;}
+}

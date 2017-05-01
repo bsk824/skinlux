@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>admin</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<div id="header">
+		<div class="headTop">
+			<h1><a href="/"><img src="images/img_logo.png" alt="COOk Medical" /></a></h1>
+			<button type="button" class="btnMobNav"><span>메뉴 열기 / 닫기</span></button>
+		</div>
+		<div id="gnb">
+			<div class="headMenu">
+				<a href="#" class="link logout">Logout</a>
+			</div>
+			<div class="gnbNav">
+				<ul>
+					<li><a href="#">회원</a>
+						<ul class="depth2">
+							<li><a href="#">회원 리스트</a></li>
+							<li><a href="#">회원 상세보기</a></li>
+							<li><a href="#">회원 등록/수정</a></li>
+						</ul>
+					</li>
+					<li><a href="#">치료후기</a>
+						<ul class="depth2">
+							<li><a href="#">치료후기 리스트</a></li>
+							<li><a href="#">치료후기 상세보기</a></li>
+							<li><a href="#">치료후기 등록/수정</a></li>
+						</ul>
+					</li>
+					<li><a href="#">공지사항</a>
+						<ul class="depth2">
+							<li><a href="#">공지사항 리스트</a></li>
+							<li><a href="#">공지사항 상세보기</a></li>
+							<li><a href="#">공지사항 등록/수정</a></li>
+						</ul>
+					</li>
+					<li><a href="#">스타방문</a>
+						<ul class="depth2">
+							<li><a href="#">스타방문 리스트</a></li>
+							<li><a href="#">스타방문 상세보기</a></li>
+							<li><a href="#">스타방문 등록/수정</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- snb -->
+		<div id="snb">
+			<div class="snbWrap">
+				<h2>회원</h2>
+				<div class="sNav">
+					<ul>
+						<li><a href="#">회원 리스트</a></li>
+						<li><a href="#">회원 상세보기</a></li>
+						<li><a href="#">회원 등록/수정</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //snb -->
+		<button type="button" class="btnSnb">메뉴 접기 / 펼치기</button>
+		<!-- contents -->
+		<div id="contents">
+			
+			<div class="pageTop">
+				<h2 class="tit">회원 리스트</h2>
+			</div>
+			<div class="bbsBtn">
+				<a href="#" class="btnExcel">엑셀 저장</a>
+				<a href="#" class="mBtnLf">Delete</a>
+				<a href="#" class="mBtnB">Upload</a>
+				<a href="#" class="mBtnLf">Write</a>
+			</div>
+
+			<h2 class="subTitle">서브타이틀</h2>
+			<!-- 탭메뉴 -->
+			<div class="tabMenu">
+				<button type="button" class="tabBtn">All</button>
+				<ul>
+					<li><a href="#">All</a></li>
+					<li><a href="#">Packaging</a></li>
+					<li class="on"><a href="#">Delivery</a></li>
+					<li><a href="#">Arrive</a></li>
+					<li><a href="#">Error</a></li>
+					<li><a href="#">Delete</a></li>
+				</ul>
+			</div>
+			<!-- //탭메뉴 -->
+			<!-- 게시판 목록 -->
+			<div class="bbsList">
+				<style type="text/css">
+				.bbsList .num {width:8%;}
+				.bbsList .sort {width:12%;}
+				.bbsList .num {width:8%;}
+				.bbsList .file {width:10%;}
+				.bbsList .date {width:12%;}
+				.bbsList .hit {width:8%;}
+				</style>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경</span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 </span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경</span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경</span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경</span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="num">
+								<strong class="tit">No</strong>
+								<span>1244</span>
+							</span>
+							<span class="sort">
+								<strong class="tit">구분</strong>
+								<span>관리자</span>
+							</span>
+							<span class="subject">
+								<strong class="tit">제목</strong>
+								<span>서비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경비스 정책 변경 관련 안내 납품관리 및 마감 정산 등 엑셀양식 변경</span>
+							</span>
+							<span class="file">
+								<strong class="tit">첨부</strong>
+								<span>3</span>
+							</span>
+							<span class="date">
+								<strong class="tit">등록일</strong>
+								<span>2013 / 03 / 01</span>
+							</span>
+							<span class="hit">
+								<strong class="tit">HIT</strong>
+								<span>40</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="btnWrap">
+				<div class="bbsSearch">
+					<select>
+						<option>선택</option>
+						<option>검색</option>
+					</select>
+					<input type="text" class="txt" />
+					<a href="#" class="mBtnLf">검색</a>
+				</div>
+				<div class="btnRight">
+					<a href="#" class="mBtnB">Write</a>
+				</div>
+			</div>
+			<!-- //게시판 목록 -->
+			<br /><br />
+			<!-- 게시판 보기 -->
+			<div class="bbsView">
+				<table>
+					<caption></caption>
+					<colgroup>
+						<col style="width:12%" />
+						<col />
+						<col style="width:12%" />
+						<col style="width:15%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" colspan="4"><strong>[중요]</strong> 납품관리 및 마감정산 등 엑셀양식 변경</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">작성자</th>
+							<td class="name">Cook medical</td>
+							<th scope="row">등록일</th>
+							<td class="date">2015 / 02 / 24</td>
+						</tr>
+						<tr>
+							<td class="file" colspan="4">
+								<span><a href="#">2016_File name_016_File name ame_016_File name</a></span>
+								<span><a href="#">2016_File name_016_File name ame_016_File name</a></span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="viewCont">
+					영진닷컴의 새 책 '엑셀·파워포인트·워드2016 & 한글NEO'는 오피스 2016의 핵심 프로그램 엑셀, 파워포인트, 워드2016과 한컴오피스 NEO의 한글 기능을 가장 효율적으로 익히는 방법을 한 권에 담았다. 각 파트를 분권 처리해 편의성을 높였다.<br />
+					저자는 각 기능을 쉽고 빠르게 익혀서 실전 문서를 제작할 수 있도록 자세한 따라하기 방식으로 소개한다. 각 파트별 섹션 시작 부분에는 '인트로' 코너를 마련해, 해당 섹션에서 다루는 전반적 내용을 한눈에 파악할 수 있도록 했다.<br />
+					ⓒ 영진닷컴 <br />
+					▲ⓒ 영진닷컴<br />
+					특히 'TIP' '꼭! 알고가기' 'QR코드로 더 자세히' 등 추가정보를 통해 독자 이해를 돕는다. '스페셜 페이지'에서는 본문에서는 다루지 못한 오피스 2016과 한글 NEO 사용에 유용한 저자 노하우를 소개하며 '체크해봐요'에서는 본문에서 익힌 내용을 활용, 응용력을 키우는 문제를 제공한다. 영진닷컴 펴냄, 
+				</div>
+				<div class="viewAnswer">
+					<p class="answerDate">답변등록일 : 2015 / 03 / 01</p>
+					영진닷컴의 새 책 '엑셀·파워포인트·워드2016 & 한글NEO'는 오피스 2016의 핵심 프로그램 엑셀, 파워포인트, 워드2016과 한컴오피스 NEO의 한글 기능을 가장 효율적으로 익히는 방법을 한 권에 담았다. 각 파트를 분권 처리해 편의성을 높였다.<br />
+					저자는 각 기능을 쉽고 빠르게 익혀서 실전 문서를 제작할 수 있도록 자세한 따라하기 방식으로 소개한다. 각 파트별 섹션 시작 부분에는 '인트로' 코너를 마련해, 해당 섹션에서 다루는 전반적 내용을 한눈에 파악할 수 있도록 했다.<br />
+					ⓒ 영진닷컴 <br />
+					▲ⓒ 영진닷컴
+					<div class="btnWrap">
+						<a href="#" class="sBtnLf">Modify</a>
+						<a href="#" class="sBtnB">Save</a>
+					</div>
+				</div>
+				<ul class="viewNav">
+					<li>
+						<span>이전 글</span>
+						<a href="#">영진닷컴의 새 책 '엑셀·파워포인트·워드2016 & 한글NEO'는 오피스 2016의 핵심 프로그램 엑셀, 파워포인스 2016의 핵심 프로그램 엑셀, 파워포인</a>
+					</li>
+					<li>
+						<span>다음 글</span>
+						<a href="#">영진닷컴의 새 책 '엑셀·파워포인트·워드2016 & 한글NEO'는 오피스 2016의 핵심 프로그램 엑셀, 파워포인스 2016의 핵심 프로그램 엑셀, 파워포인</a>
+					</li>
+				</ul>
+			</div>
+			<div class="btnWrap">
+				<a href="#" class="mBtnLf">Delete</a>
+				<a href="#" class="mBtnLf">Re Question</a>
+				<a href="#" class="mBtnB">List</a>
+			</div>
+			<!-- //게시판 보기 -->
+			<br /><br />
+			<!-- 게시판 쓰기 -->
+			<div class="bbsWrite">
+				<table>
+					<caption>게시물 작성</caption>
+					<colgroup>
+						<col style="width:10%" />
+						<col style="width:30%" />
+						<col style="width:8%" />
+						<col />
+					</colgroup>
+					<tbody>
+						<tr class="subject">
+							<th scope="row">제목</td>
+							<td colspan="3"><input type="text" class="txt" /></td>
+						</tr>
+						<tr>
+							<th scope="row">구분</td>
+							<td>
+								<select>
+									<option>게시물 구분</option>
+									<option>게시물 구분</option>
+									<option>게시물 구분</option>
+								</select>
+							</td>
+							<th scope="row">중요도</td>
+							<td>
+								<input type="checkbox" class="chk" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</td>
+							<td colspan="3">
+								<span><input type="file" /> <a href="#" class="fileAdd">파일추가</a></span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="editer">
+								<div>
+									
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btnWrap">
+				<a href="#" class="mBtnLf">List</a>
+				<a href="#" class="mBtnB">Save</a>
+			</div>
+			<!-- //게시판 쓰기 -->
+			<!-- 버튼 -->
+			<div class="btnWrap">
+				<a href="#" class="btnProduct">제품 추가</a>
+				<a href="#" class="sBtnLf">Modify</a>
+				<a href="#" class="sBtnB">Save</a>
+				<a href="#" class="mBtnLf">Re Question</a>
+				<a href="#" class="mBtnLf">Modify</a>
+				<a href="#" class="mBtnB">List</a>
+				<a href="#" class="mBtnB">Save</a>
+				<a href="#" class="mBtnLf">Short View</a>
+				<a href="#" class="mBtnLf">List</a>
+				<a href="#" class="mBtnLf btnPrint">Print</a>
+				<a href="#" class="mBtnLf btnDown">Download</a>
+				<a href="#" class="mBtnLf btnHistory">History</a>
+			</div>
+			<div class="btnWrap">
+				<div class="bbsSearch">
+					<select>
+						<option>선택</option>
+						<option>검색</option>
+					</select>
+					<input type="text" class="txt" />
+					<a href="#" class="mBtnLf">검색</a>
+				</div>
+				<div class="btnRight">
+					<a href="#" class="mBtnB">Write</a>
+				</div>
+			</div>
+			<div class="btnWrap">
+				<div class="btnRight">
+					<a href="#" class="mBtnB">Write</a>
+					<a href="#" class="mBtnLf">Modify</a>
+					<a href="#" class="mBtnB">List</a>
+				</div>
+			</div>
+			<div class="btnWrap">
+				<div class="btnLeft">
+					<a href="#" class="mBtnB">Write</a>
+					<a href="#" class="mBtnLf">Modify</a>
+					<a href="#" class="mBtnB">List</a>
+				</div>
+			</div>
+			<!-- //버튼 -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer">
+		<div class="footWrap">
+			<img src="images/img_foot_logo.png" alt="KEIDAS" />
+			<p class="copy"><small>&copy; Hanmi IT all rights reserved.</small></p>
+		</div>
+	</div>
+	<!-- //footer -->
+</body>
+</html>

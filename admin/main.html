@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>admin</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</head>
+
+<body class="main">
+	<!-- header -->
+	<div id="header">
+		<div class="headTop">
+			<h1><a href="/"><img src="images/img_logo.png" alt="COOk Medical" /></a></h1>
+			<button type="button" class="btnMobNav"><span>메뉴 열기 / 닫기</span></button>
+		</div>
+		<div id="gnb">
+			<div class="headMenu">
+				<a href="#" class="link mypage">My page</a>
+				<a href="#" class="link logout">Logout</a>
+				<select class="langSel">
+					<option>Korean</option>
+				</select>
+			</div>
+			<div class="gnbNav">
+				<ul>
+					<li><a href="#">RFID태그관리</a>
+						<ul class="depth2">
+							<li><a href="#">태그발행</a></li>
+							<li><a href="#">태그삭제</a></li>
+							<li><a href="#">태그조회</a></li>
+						</ul>
+					</li>
+					<li><a href="#">구매관리</a>
+						<ul class="depth2">
+							<li><a href="#">입고</a></li>
+							<li><a href="#">반품</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="on">납품관리</a> <!-- 활성화 시 a링크에 class="on" -->
+						<ul class="depth2">
+							<li><a href="#">출고</a></li>
+							<li><a href="#">반품</a></li>
+						</ul>
+					</li>
+					<li><a href="#">재고관리</a></li>
+					<li><a href="#">기타관리</a>
+						<ul class="depth2">
+							<li><a href="#">창고간이동</a></li>
+							<li><a href="#">병원간이동</a></li>
+							<li><a href="#">AI</a></li>
+							<li><a href="#">프로시저백</a></li>
+							<li><a href="#">제품폐기</a></li>
+						</ul>
+					</li>
+					<li><a href="#">마감정산</a></li>
+					<li><a href="#">KPI</a>
+						<ul class="depth2">
+							<li><a href="#">마감정산 정확도</a></li>
+							<li><a href="#">재고실사 빈도</a></li>
+						</ul>
+					</li>
+					<li><a href="#">고객지원</a>
+						<ul class="depth2">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">Q&amp;A</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="bg2depth"><div></div></div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<h1><img src="images/img_main_logo.png" alt="COOK MEDICAL" /></h1>
+		<p class="selDate">
+			<select>
+				<option>2016 - 03 - 30</option>
+			</select>
+			업무요약
+		</p>
+		<div class="mainWrap">
+			<div class="mainItem1">
+				<div>
+					<h2 class="tit">RFID 태그관리</h2>
+					<ul class="itemList">
+						<li>발행수 : <span>340</span></li>
+						<li>부착 : <span>320</span></li>
+						<li>미부착 : <span>17</span></li>
+						<li>오류 : <span class="fcR">2</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainItem2">
+				<div>
+					<h2 class="tit">구매관리</h2>
+					<ul class="itemList">
+						<li>총 오더 : <span>200</span></li>
+						<li>Packaging 완료 : <span>195</span></li>
+						<li>작업중 : <span>2</span></li>
+						<li>오류 : <span class="fcR">2</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainItem3">
+				<div>
+					<h2 class="tit">납품관리</h2>
+					<ul class="itemList">
+						<li>총오더 : <span>200(TO : 196 / SO : 4</span></li>
+						<li>Packaging 완료 : <span>100</span></li>
+						<li>Delivery : <span>50</span></li>
+						<li>Arrive : <span>40</span></li>
+						<li>오류 : <span>7</span></li>
+						<li>미확인 : <span>3</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainItem4">
+				<div>
+					<h2 class="tit">재고관리</h2>
+					<ul class="itemList">
+						<li>SSL : <span class="fcR">78</span></li>
+						<li>UBD : <span class="fcB">45</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainItemFull">
+				<div>
+					<h2 class="tit">NOTICE</h2>
+					<ul class="noticeList">
+						<li>
+							<a href="#">
+								<span class="sort">[KEIDAS]</span>
+								<span class="txt"> 엑셀 오더 Write시 자동 분류 서비스 시작 엑셀 오더 Write시 자동 분류 서비스 시작</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[Cook]</span>
+								<span class="txt">4월 긴급배송건 공지 안내</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[KEIDAS]</span>
+								<span class="txt"> 엑셀 오더 Write시 자동 분류 서비스 시작 엑셀 오더 Write시 자동 분류 서비스 시작</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[Cook]</span>
+								<span class="txt">4월 긴급배송건 공지 안내</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[KEIDAS]</span>
+								<span class="txt"> 엑셀 오더 Write시 자동 분류 서비스 시작 엑셀 오더 Write시 자동 분류 서비스 시작</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[Cook]</span>
+								<span class="txt">4월 긴급배송건 공지 안내</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[KEIDAS]</span>
+								<span class="txt"> 엑셀 오더 Write시 자동 분류 서비스 시작 엑셀 오더 Write시 자동 분류 서비스 시작</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="sort">[Cook]</span>
+								<span class="txt">4월 긴급배송건 공지 안내</span>
+								<span class="date">2016.3.28</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="more"><span>공지사항 더보기</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer">
+		<div class="footWrap">
+			<img src="images/img_foot_logo.png" alt="KEIDAS" />
+			<p class="copy"><small>&copy; Hanmi IT all rights reserved.</small></p>
+		</div>
+	</div>
+	<!-- //footer -->
+</body>
+</html>
