@@ -35,7 +35,7 @@
 #gnb .gnbNav {position:relative;width:1000px;margin:0 auto;}
 #gnb .gnbNav ul {position:relative;z-index:2;}
 #gnb .gnbNav ul:after {content:"";display:block;clear:both;}
-#gnb .gnbNav li {float:left;width:125px;}
+#gnb .gnbNav li {float:left;width:25%;}
 #gnb .gnbNav li a {display:block;margin:0 0 0 -1px;background:#105388;border:1px solid #0e4d7f;line-height:41px;text-align:center;color:#fff;}
 #gnb .gnbNav li:first-child a {margin:0;}
 #gnb .gnbNav li a.on,
@@ -55,14 +55,9 @@
 .selDate {width:955px;margin:0 auto 10px;font-size:14px;}
 .selDate select {height:30px;line-height:30px;}
 
-.mainWrap {position:relative;width:1000px;margin:0 auto;}
-[class*="mainItem"] > div {width:255px;background:#fff;border-radius:10px;box-shadow:0 0 4px rgba(0,0,0,0.5);}
-.mainItem1, .mainItem2 {position:absolute;top:0;left:0;}
-.mainItem1 > div, .mainItem2 > div {height:140px;}
-.mainItem2 {left:265px;}
-.mainItem3, .mainItem4 {position:absolute;top:150px;left:0;}
-.mainItem3 > div, .mainItem4 > div {height:180px;}
-.mainItem4 {left:265px;}
+.mainWrap {position:relative;width:1000px;margin:50px auto 0;}
+[class*="mainItem"] {float:left;width:50%;}
+[class*="mainItem"] > div {height:200px;margin:10px;background:#fff;border-radius:10px;box-shadow:0 0 4px rgba(0,0,0,0.5);}
 .mainItemFull {position:absolute;top:0;right:0;}
 .mainItemFull > div {width:470px;height:330px;}
 [class*="mainItem"] .tit {background:#2b7cbb;border-radius:10px 10px 0 0;color:#fff;font-size:14px;line-height:40px;text-align:center;font-weight:normal;}
@@ -176,8 +171,8 @@
 .bbsList li {border-bottom:1px solid #e9e9e9;}
 .bbsList li > a {display:table;width:100%;table-layout:fixed;}
 .bbsList li > a > span {position:relative;display:table-cell;min-height:20px;padding:8px 0;text-align:center;vertical-align:middle;}
-.bbsList li .tit {display:none;position:absolute;top:-30px;left:0;right:0;line-height:30px;text-align:center;border-bottom:1px solid #444;color:#000;cursor:default;z-index:-1;}
-.bbsList li:first-child .tit {display:block;}
+.bbsList li b {display:none;position:absolute;top:-30px;left:0;right:0;line-height:30px;text-align:center;border-bottom:1px solid #444;color:#000;cursor:default;z-index:-1;}
+.bbsList li:first-child b {display:block;}
 .bbsList .subject {text-align:left;}
 .bbsList .subject span {display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
 .bbsList .file span {display:inline-block;padding-left:18px;background:url(../images/icon_file.gif) no-repeat 0 50%;color:#2b7cbb;font-weight:bold;}
@@ -216,6 +211,9 @@
 table .alC {text-align:center;}
 table .alR {text-align:right;}
 table .alL {text-align:left;}
+
+.pagination {margin:15px 0;text-align:center;}
+.pagination * {margin:0 5px;}
 
 .bbsBtn {float:right;margin-top:-40px;}
 .addBtn {float:right;margin-top:-30px;}
@@ -413,12 +411,12 @@ table .alL {text-align:left;}
 	.bbsList li {border-bottom:.1rem solid #e9e9e9;}
 	.bbsList li > a {display:block;}
 	.bbsList li > a > span {display:inline-block;width:auto!important;min-height:100%;margin:0 .8rem 0 0;padding:0;text-align:left;}
-	.bbsList li .tit {display:inline-block;position:static;line-height:1.5;text-align:left;border-bottom:0;cursor:pointer;z-index:0;}
-	.bbsList li .tit:after {content:".";}
-	.bbsList li:first-child .tit {display:inline-block;}
+	.bbsList li b {display:inline-block;position:static;line-height:1.5;text-align:left;border-bottom:0;cursor:pointer;z-index:0;}
+	.bbsList li b:after {content:".";}
+	.bbsList li:first-child b {display:inline-block;}
 	.bbsList .subject {width:100%!important;text-align:left;}
-	.bbsList li:first-child .subject .tit,
-	.bbsList .subject .tit {display:none;}
+	.bbsList li:first-child .subject b,
+	.bbsList .subject b {display:none;}
 	.bbsList .subject span {display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
 	.bbsList .file span {display:inline-block;padding-left:18px;background:url(../images/icon_file.gif) no-repeat 0 50%;color:#2b7cbb;font-weight:bold;}
 	.bbsList .lineType1 {background:#f3c4c4;}

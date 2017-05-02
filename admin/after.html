@@ -14,10 +14,10 @@
 </head>
 
 <body>
-	<!-- header -->
+
 	<div id="header">
 		<div class="headTop">
-			<h1><a href="/"><img src="images/img_logo.png" alt="COOk Medical" /></a></h1>
+			<h1><a href="/">SKINLUX</a></h1>
 			<button type="button" class="btnMobNav"><span>메뉴 열기 / 닫기</span></button>
 		</div>
 		<div id="gnb">
@@ -26,25 +26,17 @@
 			</div>
 			<div class="gnbNav">
 				<ul>
-					<li><a href="#">회원</a></li>
-					<li><a href="#">치료후기</a></li>
-					<li><a href="#">공지사항</a></li>
-					<li><a href="#">스타방문</a></li>
+					<li><a href="member.html">회원</a></li>
+					<li><a href="after.html">치료후기</a></li>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="star.html">스타방문</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- //header -->
-	<!-- container -->
+	
 	<div id="container">
-		<!-- contents -->
-		<section id="contents">
-            <div class="bbsList">
-                <div class="bbsSearch">
-                    <select>
-                        <option>질환명 선택</option>
-                    </select>
-                </div>
+        <div class="bbsList">
                 <style type="text/css">
                 .bbsList .num {width:8%;}
                 .bbsList .sort {width:20%;}
@@ -254,26 +246,24 @@
                     </li>
                 </ul>
             </div>
-            <div class="pagination">
-                <button type="button" class="pageNavStart">처음으로</button>
-                <button type="button" class="pageNavPrev">이전</button>
-                <strong>1</strong>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <button type="button" class="pageNavNext">다음</button>
-                <button type="button" class="pageNavEnd">끝으로</button>
-            </div>
-		</section>
+        <div class="pagination">
+            <button type="button" class="pageNavStart">처음으로</button>
+            <button type="button" class="pageNavPrev">이전</button>
+            <strong>1</strong>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <button type="button" class="pageNavNext">다음</button>
+            <button type="button" class="pageNavEnd">끝으로</button>
+        </div>
+        <div class="bbsSearch">
+            <select>
+                <option>선택</option>
+                <option>검색</option>
+            </select>
+            <input type="text" class="txt" />
+            <a href="#" class="mBtnLf">검색</a>
+        </div>
 	</div>
-
-	<!-- footer -->
-	<div id="footer">
-		<div class="footWrap">
-			<img src="images/img_foot_logo.png" alt="KEIDAS" />
-			<p class="copy"><small>&copy; Hanmi IT all rights reserved.</small></p>
-		</div>
-	</div>
-	<!-- //footer -->
 </body>
 </html>
