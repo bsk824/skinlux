@@ -54,7 +54,7 @@ $(function(){
 			}
 		});
 	}
-	$('#gnb').gnb();
+	//$('#gnb').gnb();
 
 	$.fn.snb = function() {
 		var snbWrap = $(this)

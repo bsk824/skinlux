@@ -26,34 +26,10 @@
 			</div>
 			<div class="gnbNav">
 				<ul>
-					<li><a href="#">회원</a>
-						<ul class="depth2">
-							<li><a href="#">회원 리스트</a></li>
-							<li><a href="#">회원 상세보기</a></li>
-							<li><a href="#">회원 등록/수정</a></li>
-						</ul>
-					</li>
-					<li><a href="#">치료후기</a>
-						<ul class="depth2">
-							<li><a href="#">치료후기 리스트</a></li>
-							<li><a href="#">치료후기 상세보기</a></li>
-							<li><a href="#">치료후기 등록/수정</a></li>
-						</ul>
-					</li>
-					<li><a href="#">공지사항</a>
-						<ul class="depth2">
-							<li><a href="#">공지사항 리스트</a></li>
-							<li><a href="#">공지사항 상세보기</a></li>
-							<li><a href="#">공지사항 등록/수정</a></li>
-						</ul>
-					</li>
-					<li><a href="#">스타방문</a>
-						<ul class="depth2">
-							<li><a href="#">스타방문 리스트</a></li>
-							<li><a href="#">스타방문 상세보기</a></li>
-							<li><a href="#">스타방문 등록/수정</a></li>
-						</ul>
-					</li>
+					<li><a href="#">회원</a></li>
+					<li><a href="#">치료후기</a></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">스타방문</a></li>
 				</ul>
 			</div>
 		</div>
@@ -63,349 +39,231 @@
 	<div id="container">
 		<!-- contents -->
 		<section id="contents">
-			<section>
-				<div class="afterSlide">
-					<ul>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용1</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용2</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용3</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용4</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용5</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<strong class="tit">스테로이드 부작용6</strong>
-								<span class="picture">
-									<span><img src="images/img_sample.jpg" alt="치료전사진" /></span>
-									<span><img src="images/img_sample2.jpg" alt="치료후사진" /></span>
-								</span>
-								<span class="info">
-									<span>성별 <b>여자</b></span>
-									<span>치료기간 <b>3개월</b></span>
-									<span>치료부위 <b>얼굴/등가슴</b></span>
-								</span>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<script type="text/javascript">
-				var winW = $(window).width();
-				function pcSlide() {
-					$('.afterSlide ul').bxSlider({
-						speed : 1000,
-						autoDelay : 3000,
-						auto: true,
-						autoControls: false,
-						minSlides: 2,
-						maxSlides: 2,
-						slideWidth: 5000,
-						controls: false
-					});
-				}
-				function mobSlide() {
-					$('.afterSlide ul').bxSlider({
-						speed : 500,
-						autoDelay : 3000,
-						auto: true,
-						autoControls: false,
-						controls: false
-					});
-				}
-				(winW > 767) ? pcSlide() : mobSlide();
-				</script>
-			</section>
-			<section>
-				<h1 class="pageTitle">치료후기<span>스킨룩스에서 치료가 끝난 환자들의 이야기입니다.</span></h1>
-				<div class="bbsList">
-					<div class="bbsSearch">
-						<select>
-							<option>질환명 선택</option>
-						</select>
-					</div>
-					<style type="text/css">
-					.bbsList .num {width:8%;}
-					.bbsList .sort {width:20%;}
-					.bbsList .subject {width:57%;}
-					.bbsList .date {width:15%;}
-					</style>
-					<ul>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>195</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>스테로이드부작용</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="num">
-									<b>NO</b>
-									<span>196</span>
-								</span>
-								<span class="sort">
-									<b>질환명</b>
-									<span>지루성피부염</span>
-								</span>
-								<span class="subject">
-									<b>제목</b>
-									<span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
-								</span>
-								<span class="date">
-									<b>작성일</b>
-									<span>2016.07.27</span>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="pagination">
-					<button type="button" class="pageNavStart">처음으로</button>
-					<button type="button" class="pageNavPrev">이전</button>
-					<strong>1</strong>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<button type="button" class="pageNavNext">다음</button>
-					<button type="button" class="pageNavEnd">끝으로</button>
-				</div>
-			</section>
+            <div class="bbsList">
+                <div class="bbsSearch">
+                    <select>
+                        <option>질환명 선택</option>
+                    </select>
+                </div>
+                <style type="text/css">
+                .bbsList .num {width:8%;}
+                .bbsList .sort {width:20%;}
+                .bbsList .subject {width:57%;}
+                .bbsList .date {width:15%;}
+                </style>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>195</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>스테로이드부작용</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="num">
+                                <b>NO</b>
+                                <span>196</span>
+                            </span>
+                            <span class="sort">
+                                <b>질환명</b>
+                                <span>지루성피부염</span>
+                            </span>
+                            <span class="subject">
+                                <b>제목</b>
+                                <span>메디스킨 최고가증정품보상제실시/온라인최저가보상제실시 메디스킨 최고가증정품보상제실시/온라인최저가보상제실시</span>
+                            </span>
+                            <span class="date">
+                                <b>작성일</b>
+                                <span>2016.07.27</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pagination">
+                <button type="button" class="pageNavStart">처음으로</button>
+                <button type="button" class="pageNavPrev">이전</button>
+                <strong>1</strong>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <button type="button" class="pageNavNext">다음</button>
+                <button type="button" class="pageNavEnd">끝으로</button>
+            </div>
 		</section>
 	</div>
 
