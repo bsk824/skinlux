@@ -201,6 +201,7 @@
 .bbsView .viewAnswer {padding:15px;border-top:1px solid #e9e9e9;}
 .bbsView .viewAnswer .answerDate {margin:0 0 10px;color:#444;font-weight:bold;}
 .bbsView .viewAnswer .btnWrap {text-align:right;}
+.bbsView .viewAnswer textarea {width:100%;height:100px;box-sizing:border-box;}
 .bbsView .viewNav li {padding:8px 0;border-top:1px solid #e9e9e9;}
 .bbsView .viewNav li span {display:inline-block;width:75px;margin-right:10px;text-align:center;}
 .bbsView .viewNav li a {display:inline-block;max-width:75%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
