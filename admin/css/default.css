@@ -32,7 +32,7 @@
 }
 
 * {margin:0;padding:0;}
-html,body {height:100%;}
+html {height:100%;}
 body {color:#444;font:12px/1.5 Nanum Gothic, Dotum, '돋움', sans-serif;-webkit-text-size-adjust:none;}
 a {color:#444;text-decoration:none;}
 ul, ol, li {list-style:none;}

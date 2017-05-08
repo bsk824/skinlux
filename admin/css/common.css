@@ -67,6 +67,7 @@
 
 .mainWrap .itemList {margin:0 0 0 15px;}
 .mainWrap .itemList li {margin:5px 0 0;color:#444;font:11px/1.5 Dotum;letter-spacing:1px;}
+.mainWrap .itemList li a {display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .mainWrap .noticeList {padding:15px 25px;}
 .mainWrap .noticeList li {background:url(../images/dot_line.gif) repeat-x;}
 .mainWrap .noticeList li:first-child {background:none;}
@@ -191,6 +192,12 @@
 .bbsView .file span {display:inline-block;width:32%;}
 .bbsView .file span a {display:inline-block;max-width:80%;overflow:hidden;margin:2px 0;padding-left:18px;background:url(../images/icon_file.gif) no-repeat 0 50%;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;font-weight:bold;color:#2b7cbb;}
 .bbsView .viewCont {padding:15px;border-top:1px solid #e9e9e9;}
+
+.bbsView .picture {text-align:center;}
+.bbsView figure {display:inline-block;width:220px;margin:0 0 10px;}
+.bbsView figure img {width:100%;}
+.bbsView figcaption {background:#393939;color:#fff;font-size:14px;line-height:30px;}
+
 .bbsView .viewAnswer {padding:15px;border-top:1px solid #e9e9e9;}
 .bbsView .viewAnswer .answerDate {margin:0 0 10px;color:#444;font-weight:bold;}
 .bbsView .viewAnswer .btnWrap {text-align:right;}
@@ -200,13 +207,17 @@
 
 .bbsWrite {border-top:2px solid #2b7cbb;}
 .bbsWrite th,
-.bbsWrite td {padding:10px 0;}
-.bbsWrite .subject th,
-.bbsWrite .subject td {border-bottom:1px solid #e9e9e9;}
-.bbsWrite .subject .txt {width:98%;line-height:18px;border:1px solid #e9e9e9;}
+.bbsWrite td {padding:10px 0;border-bottom:1px solid #e9e9e9;}
+.bbsWrite .subject .txt {width:98%;border:1px solid #e9e9e9;}
+.bbsWrite .txt,
+.bbsWrite select {line-height:20px;height:20px;box-sizing:border-box;}
 .bbsWrite .fileAdd {display:inline-block;width:20px;height:20px;overflow:hidden;text-indent:-9999px;background:url(../images/btn_file_add.gif) no-repeat;vertical-align:middle;}
 .bbsWrite .editer {padding:20px 0 0;border-top:1px solid #444;}
 .bbsWrite .editer div {height:260px;background:#ccc;}
+.bbsWrite label {display:inline-block;}
+.bbsWrite label + label {margin:0 0 0 10px;}
+.bbsWrite label input {vertical-align:-3px;}
+.bbsWrite textarea {box-sizing:border-box;width:100%;height:150px;}
 
 table .alC {text-align:center;}
 table .alR {text-align:right;}
@@ -214,6 +225,11 @@ table .alL {text-align:left;}
 
 .pagination {margin:15px 0;text-align:center;}
 .pagination * {margin:0 5px;}
+.pagination [class*="pageNav"] {width:15px;height:15px;font:0/0 a!important;}
+.pagination .pageNavStart {background:url(../images/btn_page_start.gif) no-repeat 50% 50%;}
+.pagination .pageNavPrev {background:url(../images/btn_page_prev.gif) no-repeat 50% 50%;}
+.pagination .pageNavNext {background:url(../images/btn_page_next.gif) no-repeat 50% 50%;}
+.pagination .pageNavEnd {background:url(../images/btn_page_end.gif) no-repeat 50% 50%;}
 
 .bbsBtn {float:right;margin-top:-40px;}
 .addBtn {float:right;margin-top:-30px;}
@@ -441,6 +457,10 @@ table .alL {text-align:left;}
 	.bbsView .file span {display:block;width:100%;}
 	.bbsView .file span a {display:block;margin:.2rem 0;padding-left:1.8rem;}
 	.bbsView .viewCont {padding:1.5rem;border-top:0;}
+    
+    .bbsView figure {width:45%;margin:0 0 .5rem;}
+    .bbsView figcaption {font-size:1.4rem;line-height:3rem;}
+    
 	.bbsView .viewAnswer {padding:1.5rem;border-top:.1rem solid #e9e9e9;}
 	.bbsView .viewAnswer .answerDate {margin:0 0 1rem;}
 	.bbsView .viewNav li {position:relative;padding:.8rem 0 .8rem 8.5rem;border-top:.1rem solid #e9e9e9;}
@@ -459,7 +479,9 @@ table .alL {text-align:left;}
 	.bbsWrite input[type="file"] {width:85%;}
 	.bbsWrite .editer {width:100% !important;padding:2rem 0 0;border-top:.1rem solid #444;}
 	.bbsWrite .editer div {height:26rem;}
-
+    .bbsWrite label + label {margin:0 0 0 1rem;}
+    .bbsWrite label input {vertical-align:middle;}
+    .bbsWrite textarea {height:15rem;}
 	colgroup {display:none;}
 
 }

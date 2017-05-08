@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>admin</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</head>
+
+<body>
+
+	<div id="header">
+		<div class="headTop">
+			<h1><a href="/">SKINLUX</a></h1>
+			<button type="button" class="btnMobNav"><span>메뉴 열기 / 닫기</span></button>
+		</div>
+		<div id="gnb">
+			<div class="headMenu">
+				<a href="#" class="link logout">Logout</a>
+			</div>
+			<div class="gnbNav">
+				<ul>
+					<li><a href="member.html">회원</a></li>
+					<li><a href="after.html">치료후기</a></li>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="star.html">스타방문</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+        <div class="bbsWrite">
+            <table>
+                <colgroup>
+                    <col style="width:135px">
+                    <col style="width:420px">
+                    <col style="width:135px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td><input type="text" class="txt"> <a href="#" class="sBtnLf">접근가능그룹보기</a></td>
+                        <th scope="row">패스워드</th>
+                        <td><input type="text" class="txt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이름</th>
+                        <td><input type="text" class="txt"></td>
+                        <th scope="row">별명</th>
+                        <td><input type="text" class="txt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">회원 권한</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </td>
+                        <th scope="row">포인트</th>
+                        <td><b>0</b> 점</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">E-mail</th>
+                        <td><input type="text" class="txt"></td>
+                        <th scope="row">홈페이지</th>
+                        <td><input type="text" class="txt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">전화번호</th>
+                        <td><input type="text" class="txt"></td>
+                        <th scope="row">핸드폰번호</th>
+                        <td><input type="text" class="txt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주소</th>
+                        <td>
+                            <input type="text" class="txt" style="width:50px">
+                            -
+                            <input type="text" class="txt" style="width:50px">
+                            <a href="#" class="sBtnLf">우편번호검색</a>
+                            <input type="text" class="txt" style="width:100%;margin:5px 0;">
+                            <input type="text" class="txt" style="width:50%">
+                            <span>상세주소 입력</span>
+                        </td>
+                        <th scope="row">회원아이콘</th>
+                        <td><input type="file"><br><span>이미지 크기는 22x22로 해주세요.</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">생년월일</th>
+                        <td><input type="text" class="txt"></td>
+                        <th scope="row">남녀</th>
+                        <td>
+                            <select name="" id="">
+                                <option value="">----</option>
+                                <option value="">남</option>
+                                <option value="">여</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">메일 수신</th>
+                        <td><label><input type="checkbox" class="chk"> 정보 메일을 받음</label></td>
+                        <th scope="row">SMS 수신</th>
+                        <td><label><input type="checkbox" class="chk"> 문자메시지를 받음</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">정보 공개</th>
+                        <td colspan="3"><label><input type="checkbox" class="chk"> 타인에게 자신의 정보를 공개</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">서명</th>
+                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        <th scope="row">자기소개</th>
+                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">메모</th>
+                        <td colspan="3"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">회원가입일</th>
+                        <td>2017-04-24 13:24:15</td>
+                        <th scope="row">최근접속일</th>
+                        <td>2017-04-24 13:24:15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">IP</th>
+                        <td colspan="3">175.223.19.19</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">탈퇴일자</th>
+                        <td><input type="text" class="txt"></td>
+                        <th scope="row">접근차단일자</th>
+                        <td>
+                            <input type="text" class="txt">
+                            <label><input type="checkbox" class="chk"> 오늘</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 class="subTitle">XSS / CSRF 방지</h2>
+        
+        <div class="bbsWrite">
+            <table>
+                <colgroup>
+                    <col style="width:135px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">관리자 패스워드</th>
+                        <td><input type="text" class="txt"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btnWrap">
+            <a href="#" class="mBtnB">Delete</a>
+            <a href="#" class="mBtnLf">List</a>
+            <a href="#" class="mBtnB">Save</a>
+        </div>
+	</div>
+
+</body>
+</html>

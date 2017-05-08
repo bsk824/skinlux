@@ -1,200 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>SKINLUX</title>
+<title>admin</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="css/default.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/contents.css">
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 <script type="text/javascript" src="js/ui.js"></script>
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-<![endif]-->
 </head>
 
 <body>
-	<ul class="skipNavi">
-		<li><a href="#container">본문 바로가기</a></li>
-		<li><a href="#gnb">메뉴 바로가기</a></li>
-	</ul>
-	<header id="header">
+
+	<div id="header">
 		<div class="headTop">
 			<h1><a href="/">SKINLUX</a></h1>
-			<button type="button" class="btnMobNav"><span>메뉴 열기</span></button>
+			<button type="button" class="btnMobNav"><span>메뉴 열기 / 닫기</span></button>
 		</div>
 		<div id="gnb">
-			<div class="headUtil">
-				<nav>
-					<a href="tel:025470175" class="phone">전화상담 <span>02)547.0175</span></a>
-					<span>
-						<a href="#" class="login">로그인</a>
-						<a href="#" class="logout">로그아웃</a>
-						<a href="#" class="join">회원가입</a>
-						<a href="#" class="info">병원소개</a>
-						<a href="#" class="map">오시는길</a>
-					</span>
-					<p class="tip">회원가입 후 로그인을 하시면<br>치료사례/후기를 보실 수 있습니다.</p>
-				</nav>
+			<div class="headMenu">
+				<a href="#" class="link logout">Logout</a>
 			</div>
-			<nav class="gnbMenu">
+			<div class="gnbNav">
 				<ul>
-					<li><a href="#">SKIN 클리닉</a>
-						<div class="depth2 type2">
-							<ul>
-								<li><a href="#">지루성 피부염</a></li>
-								<li><a href="#">스테로이드 부작용</a></li>
-								<li><a href="#">여드름(안면/등/가슴)</a></li>
-								<li><a href="#">아토피/건선</a></li>
-								<li><a href="#">안면홍조/레이저 부작용</a></li>
-								<li><a href="#">매선</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#">DIET 클리닉</a>
-						<div class="depth2">
-							<ul>
-								<li><a href="#">비만</a></li>
-								<li><a href="#">다이어트약</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="#" class="non2depth">치료사례/후기</a></li>
-					<li><a href="#" class="non2depth">상담 및 예약</a></li>
-					<li><a href="#">병원소식</a>
-						<div class="depth2">
-							<ul>
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">스타방문</a></li>
-								<li><a href="#">언론보도</a></li>
-								<li><a href="#">이벤트 </a></li>
-							</ul>
-						</div>
-					</li>
+					<li><a href="member.html">회원</a></li>
+					<li><a href="after.html">치료후기</a></li>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="star.html">스타방문</a></li>
 				</ul>
-			</nav>
-			<button type="button" class="btnClose"><span>메뉴 닫기</span></button>
+			</div>
 		</div>
-	</header>
-	<div class="location">
-		<p><a href="/">Home</a> &gt; <span>치료사례/후기</span></p>
 	</div>
-
 	<div id="container">
-		<section class="content">
-			<h1 class="pageTitle">치료사례/후기<span>치료받은 환자분들의 진솔한 후기를 기다립니다.</span></h1>
-			<div class="bbsWrite">
-				<table>
-					<caption>치료사례/후기 쓰기</caption>
-					<colgroup>
-						<col style="width:135px">
-						<col style="width:420px">
-						<col style="width:135px">
-						<col>
-					</colgroup>
-					<tbody>
-						<tr>
-							<th scope="row">질환선택</th>
-							<td class="inputSelect">
-								<select>
-									<option>질환을 선택하세요.</option>
-								</select>
-							</td>
-							<th scope="row">성별</th>
-							<td class="inputRadio">
-								<label><input type="radio" class="chk" name="sex" /> 남자</label>
-								<label><input type="radio" class="chk" name="sex" /> 여자</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">치료기간</th>
-							<td colspan="3" class="inputRadio2">
-								<label><input type="radio" class="chk" name="period" /> 1개월</label>
-								<label><input type="radio" class="chk" name="period" /> 2개월</label>
-								<label><input type="radio" class="chk" name="period" /> 3개월</label>
-								<label><input type="radio" class="chk" name="period" /> 4개월</label>
-								<label><input type="radio" class="chk" name="period" /> 5개월</label>
-								<label><input type="radio" class="chk" name="period" /> 6개월이상</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">치료전사진</th>
-							<td>
-								<label class="btnFile">
-									이미지등록
-									<input type="file">
-								</label>
-								<span class="tip">이미지 사이즈 명시할것</span>
-							</td>
-							<th scope="row">치료후사진</th>
-							<td>
-								<label class="btnFile">
-									이미지등록
-									<input type="file">
-								</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">노출여부</th>
-							<td colspan="3" class="inputChk">
-								<label><input type="checkbox" class="chk" /> 랜딩에 치료전후사진 노출</label>
-								<label><input type="checkbox" class="chk" /> 치료사례 등록하기(증상등록후 치료사례/후기에 사진 노출 관리자)</label>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">증상</th>
-							<td colspan="3" class="inputTextarea">
-								<textarea rows="10" cols="20"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">내용</th>
-							<td colspan="3" class="inputTextarea2">
-								<textarea rows="10" cols="20"></textarea>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="btnWrap">
-				<span><a href="#" class="btnType4">취소</a></span>
-				<span><a href="#" class="btnType5">작성완료</a></span>
-			</div>
-		</section>
+        <div class="bbsWrite">
+            <table>
+                <colgroup>
+                    <col style="width:135px">
+                    <col style="width:420px">
+                    <col style="width:135px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">제목</th>
+                        <td colspan="3" class="subject">
+                            <input type="text" class="txt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">질환선택</th>
+                        <td class="inputSelect">
+                            <select>
+                                <option>질환을 선택하세요.</option>
+                            </select>
+                        </td>
+                        <th scope="row">성별</th>
+                        <td class="inputRadio">
+                            <label><input type="radio" class="chk" name="sex" /> 남자</label>
+                            <label><input type="radio" class="chk" name="sex" /> 여자</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">치료기간</th>
+                        <td colspan="3" class="inputRadio2">
+                            <label><input type="radio" class="chk" name="period" /> 1개월</label>
+                            <label><input type="radio" class="chk" name="period" /> 2개월</label>
+                            <label><input type="radio" class="chk" name="period" /> 3개월</label>
+                            <label><input type="radio" class="chk" name="period" /> 4개월</label>
+                            <label><input type="radio" class="chk" name="period" /> 5개월</label>
+                            <label><input type="radio" class="chk" name="period" /> 6개월이상</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">치료전사진</th>
+                        <td>
+                            <input type="file">
+                            <span class="tip">이미지 사이즈 명시할것</span>
+                        </td>
+                        <th scope="row">치료후사진</th>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">노출여부</th>
+                        <td colspan="3" class="inputChk">
+                            <label><input type="checkbox" class="chk" /> 랜딩에 치료전후사진 노출</label>
+                            <label><input type="checkbox" class="chk" /> 치료사례 등록하기(증상등록후 치료사례/후기에 사진 노출 관리자)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">증상</th>
+                        <td colspan="3">
+                            <textarea rows="10" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">내용</th>
+                        <td colspan="3">
+                            <textarea rows="10" cols="20"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btnWrap">
+            <a href="#" class="mBtnLf">List</a>
+            <a href="#" class="mBtnB">Save</a>
+        </div>
 	</div>
-
-	<footer id="footer">
-		<section>
-			<h1>SKINLUX</h1>
-			<nav>
-				<span class="privacy">
-					<a href="#">이용약관</a>
-					<a href="#">개인정보 취급방침</a>
-				</span>
-				<span class="sns">
-					<a href="#" class="facebook">페이스북</a>
-					<a href="#" class="naver">네이버블로그</a>
-					<a href="#" class="insta">인스타그램</a>
-					<a href="#" class="kakao">카카오톡</a>
-				</span>
-			</nav>
-			<p class="hospInfo">
-				<span>업체명 : 스킨룩스 한의원</span>
-				<span>대표이사 : 선우유정</span>
-				<span>서울시 강남구 논현로 826(신사동, 2층)</span>
-				<span>02-542-0175</span>
-				<span>fax : 02-547-6275</span>
-				<span>사업자 등록번호 : 4565121545212</span>
-				<span>통신판매업신고 : 41512124451</span>
-				<span>개인정보관리 책임자 : 선우유정 sdfsdf@sdfsdf.com</span>
-				<small>(c) SKINLUX all right reserved.</small>
-			</p>
-		</section>
-	</footer>
 
 </body>
 </html>
