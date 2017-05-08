@@ -6,6 +6,33 @@
       url(../font/NanumSquare.woff) format('woff'),
       url(../font/NanumSquare.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'NanumM';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/NanumMyeongjo-Regular.eot);
+  src: url(../font/NanumMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumMyeongjo-Regular.woff) format('woff'),
+       url(../font/NanumMyeongjo-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NanumM';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../font/NanumMyeongjo-Bold.eot);
+  src: url(../font/NanumMyeongjo-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumMyeongjo-Bold.woff) format('woff'),
+       url(../font/NanumMyeongjo-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NanumM';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/NanumMyeongjo-ExtraBold.eot);
+  src: url(../font/NanumMyeongjo-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(../font/NanumMyeongjo-ExtraBold.woff) format('woff'),
+       url(../font/NanumMyeongjo-ExtraBold.ttf) format('truetype');
+}
 
 * {margin:0;padding:0;}
 body {min-width:1120px\9;color:#555;font:14px/1.5 NanumSquare, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
