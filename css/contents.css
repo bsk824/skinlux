@@ -107,6 +107,7 @@
 .mainBot .facebook h1:before {content:"";display:inline-block;width:18px;height:28px;margin:0 0 0 18px;background:url('../images/icon_pack.png') no-repeat -117px -41px;vertical-align:middle;}
 .mainBot .facebook h1 span {display:inline-block;margin:0 0 0 16px;padding:0 0 0 15px;vertical-align:middle;border-left:1px solid #6b81b7;}
 .mainBot .facebook .inner {padding:20px 25px;}
+
 @media all and (max-width:1120px) {
     .mainSlide li a {height:35rem;background-size:auto 100%;}
     .mainSlide .bx-controls {bottom:2.5em;}
@@ -354,8 +355,6 @@
 .infoCont2 .txt1 b {display:block;margin:0 0 10px;color:#050505;font-size:30px;}
 .infoCont2 .txt2 {margin:25px 0 0;font-size:16px;color:#7a7a7a;}
 
-
-
 .fixedHead {width:1120px;margin:0 auto;}
 .fixed .fixedHead {position:fixed;top:0;left:0;right:0;background:#fff;z-index:10;}
 .fixed .clinicContent {padding:210px 0 0;}
@@ -482,7 +481,52 @@
 .mapTable td dt {font-weight:bold;}
 .mapTable td dt ~ dt {margin:20px 0 0;}
 
+@media all and (max-width:1200px) {
+    .infoTop {height:40rem;background-position:50% 0;background-size:cover;border-width:.2rem;}
+    .infoTop .txt1 {margin:8rem 0 0 42%;font-size:4rem;}
+    .infoTop .txt1 b {margin:0 0 0 -6rem;font-size:4.8rem;}
+    .infoTop .txt1:before {top:-.8rem;left:-10rem;width:4rem;height:3.2rem;background-position:-11.5rem -13.1rem;}
+    .infoTop .txt1:after {bottom:1.5rem;right:-5rem;width:4rem;height:3.2rem;background-position:-15.5rem -13.1rem;}
+    .infoTop .txt2 {padding:3.5rem 0 0 18%;font-size:2.2rem;}
+    
+    .infoMvv {margin:7rem 0 0;}
+    .infoMvv > p {width:25rem;margin:0 3rem;font-size:1.8rem;}
+    .infoMvv > p:before {width:17.2rem;height:17.2rem;margin:0 auto;background-size:cover;}
+    .infoMvv strong {margin:1rem 0 0;font-size:3.6rem;}
+    .infoMvv .misson strong {margin-bottom:1rem;}
+    
+    .infoChief {height:24.5rem;margin:8rem 0 0;background-position:100% 0;}
+    .infoChief .name {top:6.5rem;left:12.5rem;font-size:1.5rem;}
+    .infoChief .name strong {font-size:2.4rem;}
+    .infoChief .history {top:7rem;left:33rem;font-size:1.5rem;}
+    .infoChief .history li {padding:0 0 0 .7rem;}
+
+    .infoCont1 {margin:8rem 0 0;padding-right:30rem;}
+    .infoCont1 p {font-size:2.2rem;}
+    .infoCont1 p b {margin:0 0 1rem;font-size:4.2rem;}
+    .infoCont1 p + p {margin:3rem 0 0;}
+
+    .infoCont2 {margin:10rem 0 0;padding-left:43.5rem;}
+    .infoCont2 .txt1 {font-size:2.2rem;}
+    .infoCont2 .txt1 b {margin:0 0 1rem;font-size:3rem;}
+    .infoCont2 .txt2 {margin:2.5rem 0 0;font-size:1.6rem;}
+
+}
 @media all and (max-width:1120px) {
+    .infoMvv {margin:7rem 0 0;}
+    .infoMvv > p {width:30%;margin:0;font-size:1.4rem;}
+    .infoMvv > p:before {width:17.2rem;height:17.2rem;background-size:cover;}
+    .infoMvv strong {margin:1rem 0 0;font-size:3rem;}
+    .infoMvv .misson strong {margin-bottom:1rem;}
+    
+    .infoCont1 {background-size:auto 100%;}
+    .infoCont1 p {font-size:1.6rem;}
+    .infoCont1 p b {font-size:3rem;}
+    
+    .infoCont2 {padding-left:20rem;background-size:18rem;}
+    .infoCont2 .txt1 {font-size:2rem;}
+    .infoCont2 .txt1 b {font-size:3rem;}
+    .infoCont2 .txt2 {font-size:1.6rem;}
     
     .fixedHead {width:100%;}
     .fixed .fixedHead {left:0;right:0;width:auto;padding:0 2rem;}
@@ -616,6 +660,17 @@
 
 }
 @media all and (max-width:767px) {
+    .infoTop {height:250px;}
+    .infoTop .txt1 {margin-top:3rem;font-size:2.4rem;}
+    .infoTop .txt1 b {font-size:3rem;}
+    .infoTop .txt2 {font-size:2rem;} 
+    .infoCont1, .infoCont2 {padding:0;background:none;}
+    .infoCont1 p {font-size:1.4rem;}
+    .infoCont1 p b {font-size:2rem;}
+    .infoCont2 .txt1 {font-size:1.6rem;}
+    .infoCont2 .txt1 b {font-size:2rem;}
+    .infoCont2 .txt2 {font-size:1.4rem;}
+    
     .fixed .clinicContent {padding:15.6rem 0 0;}
     
     .clinicContent .pc {display:none;}
@@ -652,6 +707,15 @@
 }
 
 @media all and (max-width:560px) {
+    
+    .infoTop {position:relative;height:auto;background-position:60% 0;background-size:cover;}
+    .infoTop:before {content:"";display:block;padding-top:70%;}
+    .infoTop .txt1 {position:absolute;top:20%;left:40%;margin:0;font-size:1.6rem;}
+    .infoTop .txt1 b {margin:0 0 0 -6rem;font-size:2rem;}
+    .infoTop .txt1:before {top:-.4rem;left:-8rem;width:2rem;height:1.6rem;background-position:-5.8rem -6.5rem;background-size:25rem;}
+    .infoTop .txt1:after {bottom:.7rem;right:-2.5rem;width:2rem;height:1.6rem;background-position:-7.7rem -6.5rem;background-size:25rem;}
+    .infoTop .txt2 {position:absolute;top:40%;left:0;right:0;padding:2rem 0 0;font-size:1.2rem;}
+    
     .fixed .fixedHead {padding:0 1rem;}
     
     .storyTab {margin:0 -.5rem 1.5rem;}
