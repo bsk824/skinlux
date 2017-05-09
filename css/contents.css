@@ -515,7 +515,7 @@
 @media all and (max-width:1120px) {
     .infoMvv {margin:7rem 0 0;}
     .infoMvv > p {width:30%;margin:0;font-size:1.4rem;}
-    .infoMvv > p:before {width:17.2rem;height:17.2rem;background-size:cover;}
+    .infoMvv > p:before {width:17.2rem;height:17.2rem;background-size:cover !important;}
     .infoMvv strong {margin:1rem 0 0;font-size:3rem;}
     .infoMvv .misson strong {margin-bottom:1rem;}
     
@@ -664,6 +664,23 @@
     .infoTop .txt1 {margin-top:3rem;font-size:2.4rem;}
     .infoTop .txt1 b {font-size:3rem;}
     .infoTop .txt2 {font-size:2rem;} 
+    
+    .infoMvv {margin:4rem 0 0;}
+    .infoMvv > p {width:30%;font-size:1.2rem;}
+    .infoMvv > p:before {width:100%;height:auto;padding-top:100%;}
+    .infoMvv strong {margin:1rem 0 0;font-size:2.4rem;}
+    .infoMvv .misson strong {margin-bottom:1rem;}
+    .infoMvv .vision br {display:none;}
+    
+    .infoChief {position:relative;height:auto;margin:4rem 0 0;background-size:cover;}
+    .infoChief:before {content:"";display:block;padding-top:40%;}
+    .infoChief .name {top:auto;right:22rem;bottom:3rem;left:auto;font-size:1.5rem;}
+    .infoChief .name strong {font-size:2.4rem;}
+    .infoChief .history {top:auto;right:1rem;bottom:1rem;left:auto;font-size:1.5rem;}
+    .infoChief .history li {padding:0 0 0 .7rem;}
+    
+    .infoCont1 {margin:10rem 0 0;}
+    .infoCont2 {margin:2rem 0 0;}
     .infoCont1, .infoCont2 {padding:0;background:none;}
     .infoCont1 p {font-size:1.4rem;}
     .infoCont1 p b {font-size:2rem;}
@@ -715,6 +732,12 @@
     .infoTop .txt1:before {top:-.4rem;left:-8rem;width:2rem;height:1.6rem;background-position:-5.8rem -6.5rem;background-size:25rem;}
     .infoTop .txt1:after {bottom:.7rem;right:-2.5rem;width:2rem;height:1.6rem;background-position:-7.7rem -6.5rem;background-size:25rem;}
     .infoTop .txt2 {position:absolute;top:40%;left:0;right:0;padding:2rem 0 0;font-size:1.2rem;}
+    
+    .infoChief:before {padding-top:50%;}
+    .infoChief .name {bottom:-7rem;right:18rem;}
+    .infoChief .name strong {font-size:1.2rem;color:#000;}
+    .infoChief .history {bottom:-9.5rem;}
+    .infoChief .history {font-size:1.2rem;}
     
     .fixed .fixedHead {padding:0 1rem;}
     
