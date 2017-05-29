@@ -172,7 +172,7 @@
     .mainEtc .time h1 {padding:2rem 0 .5rem;margin:0 0 1rem;border-width:.1rem;font-size:1.6rem;}
 
     .mainBot {width:100%;height:32rem;margin:0 auto -11rem;}
-    
+
     .mainBot .star {width:25%;height:32rem;}
     .mainBot .star a {height:100%;}
     .mainBot .star a span {padding:.5rem 0 0;line-height:6rem;font-size:2.2rem;}
@@ -201,18 +201,18 @@
 @media all and (max-width:1023px) {
     .mainSlide li a {height:30rem;}
     .mainSlide .bx-controls {bottom:1em;}
-    
+
     .mainSlide2 li a {height:20rem;background-size:auto 100%;}
     .mainSlide2 .bx-pager {bottom:2rem;left:5rem;}
     .mainSlide2 .bx-controls-auto {bottom:2rem;left:2rem;}
-        
+
     .mainProgram li a {margin:0 .3rem;padding:1rem;}
     .mainProgram .thumb {height:12rem;text-align:center;}
     .mainProgram .tit {font-size:1.5rem;}
     .mainProgram .txt {height:3.6rem;font-size:1.2rem;}
     .mainProgram .price {margin:2rem 0 0;font-size:1.2rem;}
     .mainProgram .price b {font-size:2rem;}
-    
+
     .mainBeforeAfter ul {width:auto;margin:2.5rem 1rem 0;}
     .mainBeforeAfter ul li {width:20%;}
     .mainBeforeAfter ul li > img {width:100%;}
@@ -221,7 +221,7 @@
     .mainBeforeAfter ul li > a:before {width:106%;}
     .mainBeforeAfter ul li > a span {width:106%;box-sizing:border-box;}
     .mainBeforeAfter ul li > a span b {font-size:1.6rem;}
-    
+
     .mainEtc {height:10rem;}
     .mainEtc .link a {width:25%;height:10rem;font-size:1.4rem;}
     .mainEtc .link a:before {width:3.1rem;height:2.8rem;margin:2.5rem auto 1rem;background-size:25rem;}
@@ -234,7 +234,7 @@
     .mainEtc .contact strong {font-size:2rem;}
     .mainEtc .time {width:26%;font-size:1.2rem;}
     .mainEtc .time h1 {padding:1rem 0 .5rem;margin:0 0 .5rem;font-size:1.4rem;}
-    
+
     .mainBot {height:25rem;}
     .mainBot .star {height:25rem;}
     .mainBot .star a span {line-height:4rem;font-size:1.6rem;}
@@ -260,16 +260,16 @@
 }
 @media all and (max-width:767px) {
     .mainSlide li a {height:23rem;}
-        
+
     .mainNotice {height:4rem;}
     .mainNotice li {line-height:4rem;}
     .mainNotice a {padding:0 0 0 1rem;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
     .mainNotice a .date {display:none;}
-    
+
     .mainSlide2 li a {height:15rem;}
     .mainSlide2 .bx-pager {bottom:1.5rem;}
     .mainSlide2 .bx-controls-auto {bottom:1.5rem;}
-    
+
     .mainProgram .bx-wrapper {width:95%;}
     .mainProgram .thumb {height:auto;margin:0 0 1rem;}
     .mainProgram .thumb img {width:100%;}
@@ -278,11 +278,11 @@
     .mainProgram .price {margin:2rem 0 0;font-size:1.2rem;}
     .mainProgram .price b {font-size:2rem;}
     .mainProgram .bx-controls {display:none;}
-    
+
     .mainBeforeAfter ul li {width:33.3%;}
-    
+
     .mainEtc .link {width:100%;}
-    
+
     .mainEtc .contact, .mainEtc .time {display:none;}
     .mainBot {position:relative;height:auto;padding:5rem 0 0;}
     .mainBot:after {content:"";display:block;clear:both;}
@@ -294,28 +294,28 @@
     .mainBot .after h1 {margin:0;height:100%;}
     .mainBot .after h1 a {display:block;line-height:5rem;padding:0;font-size:1.8rem;border:0;}
     .mainBot .after ul {display:none;}
-    
+
     .mainBot .selfChk, .mainBot .facebook {display:none;}
 }
 @media all and (max-width:560px) {
     .mainSlide li a, .mainSlide2 li a {height:auto;background:none;}
     .mainSlide li a img, .mainSlide2 li a img {display:block;width:100%;}
-    
+
     .mainSlide2 .bx-controls {display:none;}
-    
+
     .mainRealStory .imgPc {display:none;}
     .mainRealStory .imgMo {display:block;width:100%;}
-    
+
     .mainProgram {padding:0 0 2rem;}
     .mainProgram .bx-viewport {margin:1.5rem 0 0;}
-        
+
     .mainBeforeAfter ul li > a span {height:3rem;line-height:3rem;padding:0 .5rem;font-size:1.1rem;}
     .mainBeforeAfter ul li > a span b {font-size:1.2rem;}
     .mainBeforeAfter ul li > a:before {height:3rem;}
-    
+
     .mainTit {padding:2rem 0 .5rem;font-size:2rem;}
     .mainTxt {font-size:1.2rem;}
-    
+
     .mainEtc {margin:5rem 0 0;}
     .mainBot {margin:0 0 -5rem;}
 }
@@ -368,6 +368,15 @@
 .clinicSlide figure {display:inline-block;width:420px;margin:0 24px;}
 .clinicSlide img {width:100%;}
 .clinicSlide figcaption {padding:5px 0;background:#000;color:#fff;font-size:24px;}
+
+.bmiSection {padding:50px 100px;background:#393939;text-align:center;}
+.bmiSection h1 {margin:0 0 15px;color:#fff;font-size:36px;}
+.bmiSection p {color:#c9c9c9;font-size:24px;line-height:1.2;}
+.bmiSection .calc {margin:35px 0;color:#dfdfdf;font-size:30px;}
+.bmiSection .calc b {display:inline-block;margin:0 15px 0 0;vertical-align:bottom;}
+.bmiSection .calc .txt {width:190px;height:45px;padding:5px 10px;background:#fff;border:1px solid #989898;font-size:28px;}
+.bmiSection .calc button {width:158px;height:58px;background:#2c2c2c;border:1px solid #989898;color:#e1e1e1;font-size:28px;}
+.bmiSection .calc .result {display:inline-block;width:133px;line-height:50px;margin:0 0 0 30px;background:#fff;border:4px solid #f5839e;color:#f46a8b;font-size:28px;vertical-align:middle;}
 
 .storyTab {margin:0 -12px 30px;}
 .storyTab:after {content:"";display:block;clear:both;}
@@ -488,13 +497,13 @@
     .infoTop .txt1:before {top:-.8rem;left:-10rem;width:4rem;height:3.2rem;background-position:-11.5rem -13.1rem;}
     .infoTop .txt1:after {bottom:1.5rem;right:-5rem;width:4rem;height:3.2rem;background-position:-15.5rem -13.1rem;}
     .infoTop .txt2 {padding:3.5rem 0 0 18%;font-size:2.2rem;}
-    
+
     .infoMvv {margin:7rem 0 0;}
     .infoMvv > p {width:25rem;margin:0 3rem;font-size:1.8rem;}
     .infoMvv > p:before {width:17.2rem;height:17.2rem;margin:0 auto;background-size:cover;}
     .infoMvv strong {margin:1rem 0 0;font-size:3.6rem;}
     .infoMvv .misson strong {margin-bottom:1rem;}
-    
+
     .infoChief {height:24.5rem;margin:8rem 0 0;background-position:100% 0;}
     .infoChief .name {top:6.5rem;left:12.5rem;font-size:1.5rem;}
     .infoChief .name strong {font-size:2.4rem;}
@@ -511,6 +520,15 @@
     .infoCont2 .txt1 b {margin:0 0 1rem;font-size:3rem;}
     .infoCont2 .txt2 {margin:2.5rem 0 0;font-size:1.6rem;}
 
+    .bmiSection {padding:5rem;}
+    .bmiSection h1 {margin:0 0 1.5rem;font-size:3.6rem;}
+    .bmiSection p {font-size:2.4rem;}
+    .bmiSection .calc {margin:3.5rem 0;font-size:3rem;}
+    .bmiSection .calc b {margin:0 1.5rem 0 0;}
+    .bmiSection .calc .txt {width:18rem;height:4.5rem;padding:.5rem 1rem;font-size:2.8rem;}
+    .bmiSection .calc button {width:15.8rem;height:5.8rem;border-width:.1rem;font-size:2.8rem;}
+    .bmiSection .calc .result {width:13.3rem;line-height:5rem;margin:0 0 0 3rem;border-width:.4rem;font-size:2.8rem;}
+
 }
 @media all and (max-width:1120px) {
     .infoMvv {margin:7rem 0 0;}
@@ -518,24 +536,24 @@
     .infoMvv > p:before {width:17.2rem;height:17.2rem;background-size:cover !important;}
     .infoMvv strong {margin:1rem 0 0;font-size:3rem;}
     .infoMvv .misson strong {margin-bottom:1rem;}
-    
+
     .infoCont1 {background-size:auto 100%;}
     .infoCont1 p {font-size:1.6rem;}
     .infoCont1 p b {font-size:3rem;}
-    
+
     .infoCont2 {padding-left:20rem;background-size:18rem;}
     .infoCont2 .txt1 {font-size:2rem;}
     .infoCont2 .txt1 b {font-size:3rem;}
     .infoCont2 .txt2 {font-size:1.6rem;}
-    
+
     .fixedHead {width:100%;}
     .fixed .fixedHead {left:0;right:0;width:auto;padding:0 2rem;}
     .fixed .clinicContent {padding:21rem 0 0;}
-    
+
     .clinicSlide {width:100%;}
     .clinicSlide figure {width:40%;margin:0 2.4rem;}
     .clinicSlide figcaption {padding:.5rem 0;font-size:2.4rem;}
-    
+
 	.afterSlide li .info span {margin:0 1rem;}
 
 	.evtList {border-width:.2rem;padding:4rem 0 0;}
@@ -564,7 +582,7 @@
 	.idpwFindWrap fieldset .row .btnType2 {width:9.8rem;line-height:4.8rem;font-size:1.4rem;}
 	.idpwFindWrap .btnWrap {margin:5rem 0 0;}
 	.idpwFindWrap .btnWrap .btnType1 {width:29.8rem;font-size:2.2rem;}
-    
+
     .mapTit {padding:3.5rem 0 0;border-width:.2rem;font-size:3.6rem;}
 
     .mapInfo {margin:1.5rem 0;font-size:2rem;}
@@ -581,11 +599,20 @@
 
 }
 @media all and (max-width:1023px) {
-    
+
     .fixed .clinicContent {padding:15.6rem 0 0;}
-    
+
     .clinicSlide figure {width:40%;margin:0 2.4rem;}
     .clinicSlide figcaption {padding:.5rem 0;font-size:2rem;}
+
+    .bmiSection {padding:5rem;}
+    .bmiSection h1 {font-size:3.6rem;}
+    .bmiSection p {font-size:2rem;}
+    .bmiSection .calc {margin:3.5rem 0;font-size:2.4rem;}
+    .bmiSection .calc b {margin:0 1rem 0 0;}
+    .bmiSection .calc .txt {width:15rem;height:4.5rem;padding:.5rem 1rem;font-size:2rem;}
+    .bmiSection .calc button {width:12rem;height:4.5rem;border-width:.1rem;font-size:2rem;}
+    .bmiSection .calc .result {width:11rem;line-height:3.8rem;margin:1rem 0 0;border-width:.4rem;font-size:2rem;}
 
 	.afterSlide {margin:0 -1.5rem;}
 	.afterSlide li div {margin:0 1.5rem;padding:0 0 2rem;}
@@ -650,7 +677,7 @@
 	.idpwFindWrap fieldset .row .email,
 	.idpwFindWrap fieldset .row .phone {position:relative;display:block;padding:0 8rem 0 0;}
 	.idpwFindWrap fieldset .row .btnType2 {width:7rem;line-height:4.8rem;font-size:1.4rem;}
-    
+
     .mapTit {padding:2rem 0 0;border-width:.2rem;font-size:2rem;}
 
     .mapInfo {font-size:1.6rem;}
@@ -663,22 +690,22 @@
     .infoTop {height:250px;}
     .infoTop .txt1 {margin-top:3rem;font-size:2.4rem;}
     .infoTop .txt1 b {font-size:3rem;}
-    .infoTop .txt2 {font-size:2rem;} 
-    
+    .infoTop .txt2 {font-size:2rem;}
+
     .infoMvv {margin:4rem 0 0;}
     .infoMvv > p {width:30%;font-size:1.2rem;}
     .infoMvv > p:before {width:100%;height:auto;padding-top:100%;}
     .infoMvv strong {margin:1rem 0 0;font-size:2.4rem;}
     .infoMvv .misson strong {margin-bottom:1rem;}
     .infoMvv .vision br {display:none;}
-    
+
     .infoChief {position:relative;height:auto;margin:4rem 0 0;background-size:cover;}
     .infoChief:before {content:"";display:block;padding-top:40%;}
     .infoChief .name {top:auto;right:22rem;bottom:3rem;left:auto;font-size:1.5rem;}
     .infoChief .name strong {font-size:2.4rem;}
     .infoChief .history {top:auto;right:1rem;bottom:1rem;left:auto;font-size:1.5rem;}
     .infoChief .history li {padding:0 0 0 .7rem;}
-    
+
     .infoCont1 {margin:10rem 0 0;}
     .infoCont2 {margin:2rem 0 0;}
     .infoCont1, .infoCont2 {padding:0;background:none;}
@@ -687,14 +714,23 @@
     .infoCont2 .txt1 {font-size:1.6rem;}
     .infoCont2 .txt1 b {font-size:2rem;}
     .infoCont2 .txt2 {font-size:1.4rem;}
-    
+
     .fixed .clinicContent {padding:15.6rem 0 0;}
-    
+
     .clinicContent .pc {display:none;}
     .clinicContent .mo {display:block;}
     .clinicSlide figure {width:40%;margin:0 1rem;}
     .clinicSlide figcaption {font-size:2rem;}
-    
+
+    .bmiSection {padding:2.5rem 1rem;}
+    .bmiSection h1 {font-size:1.4rem;}
+    .bmiSection p {font-size:1.2rem;}
+    .bmiSection .calc {margin:1.8rem 0;font-size:1.2rem;}
+    .bmiSection .calc b {margin:0 .5rem 0 0;}
+    .bmiSection .calc .txt {width:10rem;height:3rem;padding:.5rem 1rem;font-size:1.2rem;}
+    .bmiSection .calc button {width:100%;height:3rem;margin:1rem 0 0;border-width:.1rem;font-size:1.2rem;}
+    .bmiSection .calc .result {width:100%;line-height:3rem;margin:1rem 0 0;border-width:.4rem;font-size:1.2rem;box-sizing:border-box;}
+
 	.afterSlide {margin:0;}
 	.afterSlide li div {margin:0;}
 	.afterSlide li div {padding:0 0 1rem;}
@@ -724,7 +760,7 @@
 }
 
 @media all and (max-width:560px) {
-    
+
     .infoTop {position:relative;height:auto;background-position:60% 0;background-size:cover;}
     .infoTop:before {content:"";display:block;padding-top:70%;}
     .infoTop .txt1 {position:absolute;top:20%;left:40%;margin:0;font-size:1.6rem;}
@@ -732,20 +768,20 @@
     .infoTop .txt1:before {top:-.4rem;left:-8rem;width:2rem;height:1.6rem;background-position:-5.8rem -6.5rem;background-size:25rem;}
     .infoTop .txt1:after {bottom:.7rem;right:-2.5rem;width:2rem;height:1.6rem;background-position:-7.7rem -6.5rem;background-size:25rem;}
     .infoTop .txt2 {position:absolute;top:40%;left:0;right:0;padding:2rem 0 0;font-size:1.2rem;}
-    
+
     .infoChief:before {padding-top:50%;}
     .infoChief .name {bottom:-7rem;right:18rem;}
     .infoChief .name strong {font-size:1.2rem;color:#000;}
     .infoChief .history {bottom:-9.5rem;}
     .infoChief .history {font-size:1.2rem;}
-    
+
     .fixed .fixedHead {padding:0 1rem;}
-    
+
     .storyTab {margin:0 -.5rem 1.5rem;}
     .storyTab span {width:50%;}
     .storyTab a {margin:.5rem;}
     .storyTab .active a:after {border-width:.2rem;}
-    
+
 	.evtList li {width:100%;padding:0 0 2rem;}
 
 	.loginWrap {border-width:.4rem;}
@@ -764,7 +800,7 @@
 	.joinField .btnWrap {display:block;}
 	.joinField .btnWrap > div a {padding-left:1.7rem;}
 	.joinField .btnType2 {line-height:3.8rem;}
-    
+
     .mapTit {padding:2rem 0 0;border-width:.2rem;font-size:2rem;}
 
     .mapInfo {font-size:1.3rem;}
