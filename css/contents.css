@@ -736,8 +736,6 @@
 
     .fixed .clinicContent {padding:15.6rem 0 0;}
 
-    .clinicContent .pc {display:none;}
-    .clinicContent .mo {display:block;}
     .clinicSlide figure {width:40%;margin:0 1rem;}
     .clinicSlide figcaption {font-size:2rem;}
 
