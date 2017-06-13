@@ -498,6 +498,12 @@
 .mapTable td dt {font-weight:bold;}
 .mapTable td dt ~ dt {margin:20px 0 0;}
 
+.errorBox {position:fixed;width:610px;height:418px;top:50%;left:50%;margin:-209px 0 0 -417px;padding:0 0 0 224px;border:8px solid #f4f4f4;border-radius:38px;}
+.errorBox:before {content:"";position:absolute;top:68px;left:73px;width:104px;height:134px;background:url(../images/icon_pack.png) no-repeat -332px -75px;}
+.errorBox .txt1 {margin:65px 0 15px;color:#4d4c4c;font-size:38px;font-weight:800;line-height:1.2;}
+.errorBox .txt2 {color:#8e8e8e;font-size:18px;line-height:1.6;}
+.errorBox .btn a {width:245px;margin:25px 0 0;color:#fff;font-size:24px;}
+
 @media all and (max-width:1200px) {
     .infoTop {height:40rem;background-position:50% 0;background-size:cover;border-width:.2rem;}
     .infoTop .txt1 {margin:8rem 0 0 42%;font-size:4rem;}
@@ -693,6 +699,11 @@
 
     .map .root_daum_roughmap {height:30rem;}
 
+    .errorBox {position:fixed;width:auto;height:auto;top:50%;left:5rem;right:5rem;margin:0;padding:5rem 0 5rem 15rem;border-width:.8rem;border-radius:3.8rem;transform:translateY(-50%);}
+    .errorBox:before {content:"";position:absolute;top:6.8rem;left:3rem;width:10.4rem;height:13.4rem;background-position:-33.2rem -7.5rem;}
+    .errorBox .txt1 {margin:0 0 1.5rem;color:#4d4c4c;font-size:3rem;}
+    .errorBox .txt2 {font-size:1.6rem;}
+    .errorBox .btn a {width:24.5rem;margin:2.5rem 0 0;font-size:2rem;}
 }
 @media all and (max-width:767px) {
     .infoTop {height:250px;}
@@ -772,6 +783,12 @@
     .joinCom .txt2 {font-size:1.6rem;}
     .joinCom .btn {margin:4.5rem 0 0;}
     .joinCom .btn .btnType1 {width:30rem;font-size:1.6rem;}
+
+    .errorBox {padding:5rem;}
+    .errorBox:before {float:left;position:static;width:5.2rem;height:6.7rem;margin:0 1rem 0 0;background-position:-16.6rem -3.8rem;background-size:25rem;}
+    .errorBox .txt1 {margin:0 0 1.5rem;color:#4d4c4c;font-size:3rem;}
+    .errorBox .txt2 {font-size:1.6rem;}
+    .errorBox .btn a {width:24.5rem;margin:2.5rem 0 0;font-size:2rem;}
 }
 
 @media all and (max-width:560px) {
@@ -836,4 +853,11 @@
     .mapTable th b span {display:inline-block;font-size:1.2rem;}
     .mapTable td {display:block;padding:0;font-size:1.4rem;}
     .mapTable td dt ~ dt {margin:1rem 0 0;}
+
+    .errorBox {left:1rem;right:1rem;padding:3rem 1rem;border-width:.4rem;}
+    .errorBox:before {float:left;position:static;width:5.2rem;height:6.7rem;margin:0 1rem 0 0;background-position:-16.6rem -3.8rem;background-size:25rem;}
+    .errorBox .txt1 {margin:0 0 1.5rem;color:#4d4c4c;font-size:1.6rem;}
+    .errorBox .txt2 {font-size:1.4rem;}
+    .errorBox .btn a {width:15rem;margin:2.5rem 0 0;font-size:1.4rem;}
+
 }
