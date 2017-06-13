@@ -450,6 +450,14 @@
 .joinField .btnWrap span {float:left;width:50%;margin:0;}
 .joinField .btnWrap span a {display:block;margin:10px 5px 0;}
 
+.joinCom {padding:0 0 55px;border:8px solid #f0f0f0;text-align:center;}
+.joinCom .txt1 {margin:50px 0 10px;font:40px/1 NanumM;}
+.joinCom .txt1 strong {font-weight:400;color:#1b9ca1;}
+.joinCom .txt1:before {content:"";display:block;margin:0 auto 25px;width:83px;height:97px;background:url(../images/icon_pack.png) no-repeat -250px -75px;}
+.joinCom .txt2 {font-size:22px;color:#7c7c7c;}
+.joinCom .btn {margin:45px 0 0;}
+.joinCom .btn .btnType1 {width:300px;font-size:16px;}
+
 .idpwFindWrap .tabContent > div {float:left;width:505px;padding-left:35px;}
 .idpwFindWrap .tabContent > div + div {float:right;}
 .idpwFindWrap .radio {margin:0 0 5px -30px;color:#323232;font-size:24px;line-height:1;}
@@ -757,6 +765,13 @@
 	.idpwFindWrap fieldset .row .phone select {height:3rem;}
 	.idpwFindWrap fieldset .row .btnType2 {line-height:2.6rem;font-size:1.2rem;}
 	.idpwFindWrap .btnWrap .btnType1 {width:29.8rem;font-size:2.2rem;}
+
+    .joinCom {padding:0 0 5.5rem;border-width:.8rem;}
+    .joinCom .txt1 {margin:5rem 0 1rem;font-size:3rem;}
+    .joinCom .txt1:before {margin:0 auto 2.5rem;width:8.3rem;height:9.7rem;background-position:-25rem -7.5rem;}
+    .joinCom .txt2 {font-size:1.6rem;}
+    .joinCom .btn {margin:4.5rem 0 0;}
+    .joinCom .btn .btnType1 {width:30rem;font-size:1.6rem;}
 }
 
 @media all and (max-width:560px) {
@@ -800,6 +815,13 @@
 	.joinField .btnWrap {display:block;}
 	.joinField .btnWrap > div a {padding-left:1.7rem;}
 	.joinField .btnType2 {line-height:3.8rem;}
+
+    .joinCom {padding:0 0 5.5rem;border-width:.4rem;}
+    .joinCom .txt1 {margin:2.5rem 0 1rem;font-size:1.6rem;}
+    .joinCom .txt1:before {margin:0 auto 2rem;width:4.1rem;height:4.8rem;background-position:-12.5rem -3.8rem;background-size:25rem;}
+    .joinCom .txt2 {font-size:1.1rem;}
+    .joinCom .btn {margin:2.5rem 0 0;}
+    .joinCom .btn .btnType1 {width:15rem;font-size:1.4rem;}
 
     .mapTit {padding:2rem 0 0;border-width:.2rem;font-size:2rem;}
 
