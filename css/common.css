@@ -303,6 +303,16 @@
 .btnFile {position:relative;display:inline-block;overflow:hidden;margin:0 20px 0 0;padding:0 15px;background:#575761;color:#fff;font-size:16px;line-height:34px;}
 .btnFile [type="file"] {position:absolute;top:0;right:0;bottom:0;left:0;opacity:0;}
 
+/* layer */
+.layerWrap {position:fixed;top:50%;left:50%;width:386px;height:225px;margin:-116px 0 0 -197px;background:#fff;border:4px solid #dadada;}
+.layerWrap .layerTitle {padding:0 0 0 24px;background:#f4f4f4;color:#000;font-size:22px;line-height:55px;font-weight:normal;}
+.layerWrap .btnClose {position:absolute;top:14px;right:17px;width:28px;height:28px;background:url(../images/icon_pack.png) no-repeat -136px -41px;font:0/0 a!important;}
+.layerWrap .passwordBox {padding:25px 0 0;text-align:center;}
+.layerWrap .txt1 {color:#000;font-size:14px;}
+.layerWrap .input {margin:20px 0 0;}
+.layerWrap .input [type="password"] {width:180px;height:25px;}
+.layerWrap .input .btnType1 {width:90px;line-height:40px;color:#fff;font-size:20px;}
+
 hr {margin:50px 0;}
 @media all and (max-width:1200px) {
 	.tabNav {padding:0 .1rem;border-width:.1rem;}
@@ -445,6 +455,15 @@ hr {margin:50px 0;}
 
 	.btnTypeSearch {padding:.4rem 1rem;border-radius:.2rem;}
 	.btnTypeSearch:before {width:2rem;height:2rem;margin:0 .5rem 0 0;background-position:-9.6rem -4.1rem;background-size:50rem;}
+
+    /* layer */
+    .layerWrap .layerTitle {padding:0 0 0 2.4rem;font-size:2.2rem;line-height:5.5rem;}
+    .layerWrap .btnClose {top:1.4rem;right:1.7rem;width:2.8rem;height:2.8rem;background-position:-13.6rem -4.1rem;background-size:50rem;}
+    .layerWrap .passwordBox {padding:2.5rem 0;}
+    .layerWrap .txt1 {font-size:1.4rem;}
+    .layerWrap .input {margin:2rem 0 0;}
+    .layerWrap .input [type="password"] {width:18rem;height:4rem;}
+    .layerWrap .input .btnType1 {width:9rem;line-height:4rem;color:#fff;font-size:2rem;}
 }
 @media all and (min-width:768px) {
     .respTab nav {display:block!important;}
@@ -559,4 +578,7 @@ hr {margin:50px 0;}
 	.btnWrap > span {width:50%;margin:0;}
 	.btnWrap > span + span {margin:0 0 0 .4rem;}
 	.btnWrap > span [class*="btnType"] {width:100%;padding:0;font-size:1.4rem;}
+
+
+    .layerWrap {left:1rem;right:1rem;width:auto;height:auto;margin:0;border-width:.4rem;transform:translateY(-50%);}
 }
