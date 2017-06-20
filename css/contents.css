@@ -458,10 +458,9 @@
 .joinCom .btn {margin:45px 0 0;}
 .joinCom .btn .btnType1 {width:300px;font-size:16px;}
 
-.idpwFindWrap .tabContent > div {float:left;width:505px;padding-left:35px;}
-.idpwFindWrap .tabContent > div + div {float:right;}
-.idpwFindWrap .radio {margin:0 0 5px -30px;color:#323232;font-size:24px;line-height:1;}
-.idpwFindWrap .tip {font-size:15px;color:#686868;}
+.idpwFindWrap .tabContent > div {width:505px;margin:0 auto;padding-left:35px;}
+.idpwFindWrap .tit {color:#323232;font-size:24px;}
+.idpwFindWrap .tip {color:#686868;font-size:15px;font-weight:normal;}
 .idpwFindWrap fieldset {position:relative;margin:20px 0 0;}
 .idpwFindWrap fieldset .row {position:relative;display:block;padding:0 0 0 75px;}
 .idpwFindWrap fieldset .row + .row {margin:10px 0 0;}
@@ -580,9 +579,9 @@
 	.evtList li {width:45%;margin:0;padding:0 2rem 4rem;}
 	.evtList li img {width:100%;}
 
-	.idpwFindWrap .tabContent > div {width:50%;padding-left:3.5rem;box-sizing:border-box;}
+	.idpwFindWrap .tabContent > div {width:80%;padding-left:3.5rem;box-sizing:border-box;}
 
-	.idpwFindWrap .radio {margin:0 0 .5rem -3rem;font-size:2.4rem;}
+	.idpwFindWrap .tit {font-size:2.4rem;}
 	.idpwFindWrap .tip {font-size:1.5rem;}
 
 	.idpwFindWrap fieldset {margin:2rem 0 0;}
@@ -692,8 +691,7 @@
 
 	.idpwFindWrap .tabContent > div {width:49%;padding-left:0;}
 
-	.idpwFindWrap .radio {margin:0 0 .5rem;}
-	.idpwFindWrap .tip {margin:0 0 0 3rem;font-size:1.2rem;}
+	.idpwFindWrap .tip {display:block;font-size:1.2rem;}
 	.idpwFindWrap fieldset .row .email,
 	.idpwFindWrap fieldset .row .phone {position:relative;display:block;padding:0 8rem 0 0;}
 	.idpwFindWrap fieldset .row .btnType2 {width:7rem;line-height:4.8rem;font-size:1.4rem;}
