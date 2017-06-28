@@ -1,0 +1,492 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/contents.css" />
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript" src="../js/main.js"></script>
+
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/design.js"></script>
+
+<script type="text/javascript" src="../js/jquery.touchwipe.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollBanner.js"></script>
+
+<title>스킨룩스한의원 다이어트 프로그램  </title>
+
+<style type="text/css">
+* {
+	outline: none !important;
+}
+.contents {
+	position: relative;
+}
+
+/* #### bootstrap Form #### */
+.bootstrap-frm {
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 1200px;
+	background: #FFF;
+	padding: 20px 100px 20px 10px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #888;
+	text-shadow: 1px 1px 1px #FFF;
+	border:1px solid #DDD;
+}
+.bootstrap-frm h1 {
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid  #DADADA;
+	width: 45%;
+    margin: 10px 30px 30px 30px;
+    color: #111;
+}
+
+.bootstrap-frm label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.bootstrap-frm label>span {
+    float: left;
+	width: 10%;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 78px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"],.bootstrap-frm input[type="password"], .bootstrap-frm textarea {
+    border: 1px solid #CCC;
+    color: #888;
+    height: 30px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-left: -35px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 35%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.bootstrap-frm [type="checkbox"] {
+    border: 1px solid #CCC;
+    color: #888;
+
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-top: 13px;
+}
+.item_s {
+	margin-left: 5px;
+}
+.item_all {
+	position:relative;
+	left: -39px;
+}
+.bootstrap-frm select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 36%;
+    height: 35px;
+	line-height:15px;
+}
+.bootstrap-frm textarea{
+     height:100px;
+	padding: 5px 0px 0px 5px;
+	width: 35%;
+}
+.bootstrap-frm .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+    width: 20%;
+    margin: 3px auto;
+
+}
+.bootstrap-frm .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+.allow_1 .text_w input { width:18px;height:13px;}
+.allow_1 .text_g { color:#b6b1ae;font-size:12px; padding-top: 0px;padding-bottom: 25px;display:block;}
+
+.qna_w {
+	position: absolute;
+	top: 1970px;
+	left: 620px;
+	height: 600px;
+}
+
+#daum_map_view { position:relative;width:1230px;height:500px;margin:0 auto;top:-270px;}
+#daum_map_view.tail_menu { position:absolute;left:210px;top:1500px;}
+#daum_map_view .tail_menu a { text-decoration:none;color:#000000;}
+#pdaum_map_view .tail_menu li { float:left;margin-right:34px;}
+
+#daumRoughmapContainer1450387532000 { position:absolute;left:1px;top:270px;}
+#daumRoughmapContainer1450388259952 { position:absolute;left:1px;top:1480px;}
+address  { color: gray; font-weight:500;font-size: 2em;text-align:center;background: black;padding: 30px;font-family:"맑은 고딕";position:relative;left:1px;}
+#STATICMENU { position:absolute;left:1200px;z-index:1000;}
+
+.root_daum_roughmap {
+	width: 1200px !important;
+}
+
+
+
+/*
+#STATICMENU { position:absolute;left:1610px;width:194px;height:370px;background:url("./img/pro01/q_01.png");z-index:1000;}
+#STATICMENU form {position:relative;width:194px;height:390px;}
+#STATICMENU .in_name { position:absolute;left:75px;top:114px;width:97px;height:16px;border:1px solid #c8c8c8;}
+#STATICMENU .in_password { position:absolute;left:75px;top:134px;width:97px;height:16px;border:1px solid #c8c8c8;}
+#STATICMENU .in_phone1 {position:absolute;left:20px;top:193px;width:50px;height:20px;border:1px solid #c8c8c8;}
+#STATICMENU .in_phone2 {position:absolute;left:75px;top:193px;width:45px;height:18px;border:1px solid #c8c8c8;}
+#STATICMENU .in_phone3 {position:absolute;left:125px;top:193px;width:45px;height:18px;border:1px solid #c8c8c8;}
+#STATICMENU .in_branch {position:absolute;left:75px;top:154px;width:99px;height:19px;border:1px solid #c8c8c8;}
+#STATICMENU .in_email { position:absolute;left:20px;top:236px;width:150px;height:18px;border:1px solid #c8c8c8;}
+#STATICMENU .in_content {position:absolute;left:20px;top:260px;width:150px;height:53px;border:1px solid #c8c8c8;}
+#STATICMENU .frm_btn {position:absolute;left:46px;top:325px;width:100px;height:30px;}
+*/
+</style>
+<script>
+function fonline_submit(f)
+{
+	if(f.in_name.value == ""){
+		alert("이름을 입력하세요.");
+		return false;
+	}
+	if(f.in_email.value == ""){
+		alert("이메일을 입력하세요.");
+		return false;
+	}
+	if(f.in_phone.value == ""){
+		alert("연락처를 남겨주세요.");
+		return false;
+	}
+	if(f.in_email.value != ""){
+		var str = "@";
+		var email = f.in_email.value;
+		var result = 0;
+		for(var i = 0 ; i < email.length; i++){
+			result = str.indexOf(email.charAt(i));
+			if(result != -1){
+				break;
+			}
+		}
+		if(result == -1){
+			alert("이메일 형식이 잘못되었습니다.");
+			return false;
+		}
+	}
+	if(f.in_content.value == ""){
+		alert("비밀번호를 입력하세요");
+		return false;
+	}
+	if(f.in_content.value == ""){
+		alert("상담내용 필수입니다.");
+		return false;
+	}
+
+	var chk = document.getElementsByName("items[]");
+    var bchk = false;
+	for (i=0; i<chk.length; i++)
+	{
+		if (chk[i].checked)
+			bchk = true;
+	}
+	if (!bchk)
+	{
+		alert("상담하실 항목을 하나 이상 선택하세요.");
+		return false;
+	}
+
+	if (f.allow.checked == false)
+	{
+		alert('개인정보동의를 체크해주세요.');
+		f.allow.focus();
+		return false;
+	}
+
+	f.action = '../pro/landing.php';    return true;
+}
+</script>
+<script type="text/javascript">
+ var stmnLEFT = 1230; // 오른쪽 여백
+ var stmnGAP1 = 0; // 위쪽 여백
+ var stmnGAP2 = 100; // 스크롤시 브라우저 위쪽과 떨어지는 거리
+ var stmnBASE = 100; // 스크롤 시작위치
+ var stmnActivateSpeed = 20; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+ var stmnScrollSpeed = 20; //스크롤 속도 (클수록 느림)
+ var stmnTimer;
+
+ function RefreshStaticMenu() {
+  var stmnStartPoint, stmnEndPoint;
+  stmnStartPoint = parseInt(document.getElementById('STATICMENU').style.top, 10);
+  stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2;
+  if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
+  if (stmnStartPoint != stmnEndPoint) {
+   stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 );
+   document.getElementById('STATICMENU').style.top = parseInt(document.getElementById('STATICMENU').style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + 'px';
+   stmnRefreshTimer = stmnScrollSpeed;
+   }
+  stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
+  }
+
+function InitializeStaticMenu()
+{
+	document.getElementById('STATICMENU').style.left = stmnLEFT + 'px';  //처음에 오른쪽에 위치. left로 바꿔도.
+	document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE + 'px';
+	RefreshStaticMenu();
+}
+</script>
+</head>
+<body onload="InitializeStaticMenu();">
+	<div>
+		<div class="contents">
+			<div id="STATICMENU">
+				<p><img src="http://www.skin-lux.co.kr/pro/img/pro01/quick_01.png" alt=""/></p>
+				<p><a href="#form_anq"><img src="new_images/quick_02_1.png" alt="" onmouseover="this.src='new_images/quick_02ov_1.png';" onmouseout="this.src='new_images/quick_02_1.png';"/></a></p>
+
+				<p><a href="#skin-lux-map"><img src="new_images/quick_05_1.png" alt="" onmouseover="this.src='new_images/quick_05ov_1.png';" onmouseout="this.src='new_images/quick_05_1.png';"/></a></p>
+				<p><a href="http://www.skin-lux.co.kr/"  target="_blank"><img src="new_images/quick_06_1.png" alt="" onmouseover="this.src='new_images/quick_06ov_1.png';" onmouseout="this.src='new_images/quick_06_1.png';"/></a></p>
+			  <p><img src="new_images/quick_07_1.png" alt=""/></p>
+			</div>
+
+			<p><img src="new_images/web_acne_01.jpg" alt="logo"  usemap="#Map2" border="0" /></p>
+			<map name="Map2" id="Map2">
+                <area shape="rect" coords="497,3,713,82" href="http://www.skin-lux.co.kr/"  target="_blank" />
+            </map>
+			<p><img src="new_images/diet_01.jpg" alt="딱8만원" usemap="#Map3"/></p>
+
+			<map name="Map3">
+				<area shape="rect" coords="403,863,792,936" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_02.jpg" alt="프로그램가격" usemap="#Map4" />
+			<map name="Map4">
+			  <area shape="rect" coords="364,701,834,778" href="#form_anq">
+			</map>
+
+			<p id="cost_info"></p>
+			<p class="">
+								<form name="fonline" method="post" onSubmit="return fonline_submit(this);" autocomplete="off" id="form_anq" class="bootstrap-frm">
+
+					<!--HOME_전화 :10 HOME_온라인 :11  HOME_SMS : 12  LANDING1: 21 ~ 25 MOBILE: 31 추가적인 팝업, 기타: 41 -->
+					<input type="hidden" name="in_div" value="21">
+					<input type="hidden" name="in_branch" value="1">
+
+					<input type="hidden" name="in_randing" value="landing">
+					<!-- 스마트파인드 - 랜딩이 어디서 저장되었는지 남기기 랜딩명까지-->
+					<input type="hidden" name="landing_name" value="">  <!--랜딩명-->
+					<input type="hidden" name="ld_url" value="/pro/diet.php">	<!--현재 저장되는곳-->
+					<input type="hidden" name="returnurl" value="/pro/diet.php">	<!--어디서 왔는지 url-->
+					<h1>상담글 남기기</h1>
+					<label>
+						<span>이 름 : </span>
+						<input id="in_name" type="text" name="in_name" placeholder="이름을 입력해주세요" />
+					</label>
+
+					<label>
+						<span>연락처 : </span>
+						<input id="in_phone" type="text" name="in_phone" placeholder="연락처를 입력해주세요(010-1234-xxxx)" />
+					</label>
+
+					<label>
+						<span>이메일 :</span>
+						<input id="in_email" type="email" name="in_email" placeholder="이메일을 입력해주세요" />
+					</label>
+
+					<label>
+						<span>비밀번호 : </span>
+						<input id="in_password" type="password" name="in_password" placeholder="비밀번호를 입력해주세요" />
+					</label>
+
+					 <label>
+						<span>진료분야 :</span>
+						<div class="item_all">
+							<input type="checkbox" name="items[]" class="item_s" value="비만"> 비만
+							<input type="checkbox" name="items[]" class="item_s" value="지루성피부염"> 지루성피부염
+							<input type="checkbox" name="items[]" class="item_s" value="아토피"> 아토피
+							<input type="checkbox" name="items[]" class="item_s" value="스테로이드 부작용"> 스테로이드 부작용
+						</div>
+					</label>
+
+					<label>
+						<span>문의내용 :</span>
+						<textarea id="in_content" name="in_content" placeholder="상담하실 내용을 적어주세요"></textarea>
+					</label>
+
+					<div class="allow_1" style="position:relative;left: 83px;color:black;">
+						<input type="checkbox" class="allow" name="allow" value="true" checked="checked"> 개인정보동의
+						<a href="#" onclick="window.open('./popup.php','','width=500,height=700,scrollbars=1');return false;" style="color:black;text-decoration:none;">[자세히보기]
+						</a>
+						<span class="text_g">(입력하신 정보는 보안 서버 및 개인정보 취급 정책에 따라 안전하게 보호됩니다)</span>
+					</div>
+
+					 <label>
+						<span>&nbsp;</span>
+						<input type="submit" class="button frm_btn" value="상담문의하기" />
+					</label>
+				</form>
+			</p>
+
+			<p><img class="qna_w" src="new_images/qna_w_diet.jpg" alt="여드름 치료 패키지" />	</p>
+			<img src="new_images/diet_03.jpg" alt="치료후기" usemap="#Map5" />
+			<map name="Map5">
+				<area shape="rect" coords="433,473,768,558" href="http://www.skin-lux.co.kr/bbs/board.php?bo_table=m6_02&sca=%EB%B9%84%EB%A7%8C&no_frame=" target="_blank">
+			</map>
+
+			<img src="new_images/diet_04.jpg" alt="o라인? D라인?" usemap="#Map6" />
+			<map name="Map6">
+				<area shape="rect" coords="392,2060,812,2138" href="http://www.skin-lux.co.kr/menu/view.php?co_id=m3_01&mcode=0301" target="_blank">
+			</map>
+
+			<img src="new_images/diet_05.jpg" alt="아디포" usemap="#Map7" />
+			<map name="Map7">
+				<area shape="rect" coords="390,1459,814,1541" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_06.jpg" alt="쿨쎄라" usemap="#Map8" />
+			<map name="Map8">
+				<area shape="rect" coords="391,1591,812,1670" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_07.jpg" alt="지방분해침" usemap="#Map" />
+			<map name="Map">
+				<area shape="rect" coords="390,817,813,898" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_08.jpg" alt="지방흡입관리치료" usemap="#Map9" />
+			<map name="Map9">
+				<area shape="rect" coords="390,1531,813,1612">
+			</map>
+
+			<img src="new_images/diet_09.jpg" alt="다이어트한약" usemap="#Map10" />
+			<map name="Map10">
+				<area shape="rect" coords="390,706,814,787" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_10.jpg" alt="스킨룩스가 비만치료를 잘하는 이유" usemap="#Map11" />
+			<map name="Map11">
+				<area shape="rect" coords="390,1738,814,1821" href="#form_anq">
+			</map>
+
+			<img src="new_images/diet_11.jpg" alt="오직스킨룩스" />
+
+
+
+			<p id="skin-lux-map">
+				<div id="daum_map_view">
+					<!--
+						* Daum 지도 - 약도서비스
+						* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+						* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+					-->
+					<!-- 1. 약도 노드 -->
+					<div id="daumRoughmapContainer1450387532000" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+					<!-- 2. 설치 스크립트 -->
+					<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+					<!-- 3. 실행 스크립트 -->
+					<script charset="UTF-8">
+						new daum.roughmap.Lander({
+							"timestamp" : "1450387532000",
+							"key" : "7hqr",
+							"mapWidth" : "1200",
+							"mapHeight" : "470"
+						}).render();
+					</script>
+				</div>
+			</p>
+			<address>
+
+				<p>서울시 강남구 신사동 592-4번지 이가빌딩 2층(도로명 주소: 논현로 826)</p>
+				<p>대표전화 : 02-547-0175 &nbsp;&nbsp;&nbsp; FAX: 02-547-6275</p>
+
+			</address>
+
+	     </div>
+	</div>
+
+	<!-- WIDERPLANET  SCRIPT START 2016.3.24 -->
+	<div id="wp_tg_cts" style="display:none;"></div>
+	<script type="text/javascript">
+	var wptg_tagscript_vars = wptg_tagscript_vars || [];
+	wptg_tagscript_vars.push(
+	(function() {
+		return {
+			wp_hcuid:"",   /*Cross device targeting을 원하는 광고주는 로그인한 사용자의 Unique ID (ex. 로그인 ID, 고객넘버 등)를 암호화하여 대입.
+					*주의: 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+			ti:"26945",	/*광고주 코드*/
+			ty:"Home",	/*트래킹태그 타입*/
+			device:"web"	/*디바이스 종류 (web 또는 mobile)*/
+
+		};
+	}));
+	</script>
+	<script type="text/javascript" async src="//cdn-aitg.widerplanet.com/js/wp_astg_4.0.js"></script>
+	<!-- // WIDERPLANET  SCRIPT END 2016.3.24 -->
+
+	<script type="text/javascript">
+		var roosevelt_params = {
+			retargeting_id:'TEzluIle7sNL43X_IYxfXQ00',
+			tag_label:'PAQbqT6mQKSxzEhyn2mjYg'
+		};
+	</script>
+	<script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script>
+
+
+	<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+	<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script>
+	<script type="text/javascript">
+	if (!wcs_add) var wcs_add={};
+	wcs_add["wa"] = "s_1c53b5953201";
+	if (!_nasa) var _nasa={};
+	wcs.inflow();
+	wcs_do(_nasa);
+	</script>
+
+
+	<!-- 네이버 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+	<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+	<script type="text/javascript"> if(!wcs_add) var wcs_add = {}; wcs_add["wa"] = "9948fec28fb940"; wcs_do(); </script>
+
+	<script type="text/javascript">
+		var roosevelt_params = {
+			retargeting_id:'TEzluIle7sNL43X_IYxfXQ00',
+			tag_label:'lTN3R9SgSuS1EC52xlI26g'
+		};
+	</script>
+	<script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script>
+
+
+
+</body>
+</html>

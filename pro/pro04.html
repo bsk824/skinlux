@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>스킨룩스한의원 다이어트 프로그램 </title>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<!-- 모바일웹에서 전화번호 포맷의 번호를 입력시 iOS에서 자동링크가 걸리는 현상 제거 -->
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+<style>
+* {
+	outline: none !important;
+}
+.form-control {
+    text-align: center;
+    margin-top: 1em;
+}
+.form-control {
+    display: inline-block;
+    width: 90%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #626567;
+    margin-bottom: 10px;
+
+}
+textarea.form-control {
+    display: inline-block;
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #626567;
+    height: auto;
+}
+.allow_1 .text_w { color:#ffffff;font-size:13px;}
+.allow_1 .text_w input { width:18px;height:13px;}
+.allow_1 .text_g { color:#b6b1ae;font-size:11px; padding-top: 10px;padding-bottom: 10px;}
+</style>
+<script>
+function fonline_submit(f)
+{
+	if(f.in_name.value == ""){
+		alert("이름을 입력하세요.");
+		return false;
+	}
+	if(f.in_email.value == ""){
+		alert("이메일을 입력하세요.");
+		return false;
+	}
+	if(f.in_phone.value == ""){
+		alert("연락처를 남겨주세요.");
+		return false;
+	}
+	if(f.in_email.value != ""){
+		var str = "@";
+		var email = f.in_email.value;
+		var result = 0;
+		for(var i = 0 ; i < email.length; i++){
+			result = str.indexOf(email.charAt(i));
+			if(result != -1){
+				break;
+			}
+		}
+		if(result == -1){
+			alert("이메일 형식이 잘못되었습니다.");
+			return false;
+		}
+	}
+	if(f.in_content.value == ""){
+		alert("비밀번호를 입력하세요");
+		return false;
+	}
+	if(f.in_content.value == ""){
+		alert("상담내용 필수입니다.");
+		return false;
+	}
+	/*
+	var chk = document.getElementsByName("items[]");
+    var bchk = false;
+	for (i=0; i<chk.length; i++)
+	{
+		if (chk[i].checked)
+			bchk = true;
+	}
+	if (!bchk)
+	{
+		alert("상담하실 항목을 하나 이상 선택하세요.");
+		return false;
+	}
+	*/
+	if (f.allow.checked == false)
+	{
+		alert('개인정보동의를 체크해주세요.');
+		f.allow.focus();
+		return false;
+	}
+
+	f.action = '../pro/landing.php';    return true;
+}
+</script>
+
+<!– 전화걸기 스크립트 –>
+<script>
+	function callNumber(num) {
+		alert(num);
+		location.href="tel:"+num;
+	}
+</script>
+</head>
+<body>
+
+<!-- 이벤트 레이아웃 -->
+<div id="container" class="rouletteBg">
+	<img src="new_images/img_01.jpg" alt="" style="max-width:100%" />
+	<img src="new_images/img_02.jpg" alt="" usemap="#Map" style="max-width:100%" />
+	<map name="Map">
+		<area shape="rect" coords="11,12,110,170" href="#form_anq">
+		<area shape="rect" coords="130,12,220,181" href="#" onclick="callNumber('02-542-0175')">
+		<area shape="rect" coords="270,12,362,181" href="http://plus.kakao.com/home/%40%EC%8A%A4%ED%82%A8%EB%A3%A9%EC%8A%A4" target="_blank">
+	</map>
+
+    <img src="new_images/m_diet_01.jpg" alt="" style="max-width:100%" />
+    <a href="#form_anq"><img src="new_images/m_diet_02.jpg" alt="" style="max-width:100%" /></a>
+
+    <img src="new_images/m_diet_03.jpg" alt="" style="max-width:100%" />
+    <a href="#form_anq"><img src="new_images/m_diet_04.jpg" alt="유투브" style="max-width:100%" /></a>
+
+    <img src="new_images/m_diet_05.jpg" alt="" style="max-width:100%" />
+    <a href="http://skin-lux.co.kr/m/sub/befo_view2.php?wr_id=1005"><img src="new_images/m_diet_06.jpg" alt="" style="max-width:100%" /></a>
+
+    <img src="new_images/m_diet_07.jpg" alt="" style="max-width:100%" />
+    <img src="new_images/m_diet_08.jpg" alt="" style="max-width:100%" />
+    <img src="new_images/m_diet_09.jpg" alt="" style="max-width:100%" />
+
+    <!--a href="#form_anq"><img src="new_images/m_diet_10.jpg" alt="" style="max-width:100%" /></a-->
+    <img src="new_images/m_diet_11.jpg" alt="" style="max-width:100%" />
+
+    <a href="#form_anq"><img src="new_images/m_diet_12.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_13.jpg" alt="" style="max-width:100%" />
+
+    <a href="#form_anq"><img src="new_images/m_diet_14.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_15.jpg" alt="" style="max-width:100%" />
+
+    <a href="#form_anq"><img src="new_images/m_diet_16.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_17.jpg" alt="" style="max-width:100%" />
+
+    <a href="#form_anq"><img src="new_images/m_diet_18.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_19.jpg" alt="" style="max-width:100%" />
+
+    <a href="#form_anq"><img src="new_images/m_diet_20.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_21.jpg" alt="" style="max-width:100%" />
+
+    <a href=""><img src="new_images/m_diet_22.jpg" alt="" style="max-width:100%" /></a>
+    <img src="new_images/m_diet_23.jpg" alt="" style="max-width:100%" />
+
+    <img src="new_images/img_20.jpg" alt="" usemap="#Map2" style="max-width:100%" />
+    <map name="Map2">
+      <area shape="rect" coords="379,1,754,106" href="">
+    </map>
+     <div id="pro_1_right" class="bottom">
+				<form name="fonline" method="post" onSubmit="return fonline_submit(this);" autocomplete="off" id="form_anq">
+			<!--HOME_전화 :10 HOME_온라인 :11  HOME_SMS : 12  LANDING1: 21 ~ 25 MOBILE: 31 추가적인 팝업, 기타: 41 -->
+			<input type="hidden" name="in_div" value="21">
+			<input type="hidden" name="in_branch" value="1">
+
+			<input type="hidden" name="in_randing" value="landing">
+			<!-- 스마트파인드 - 랜딩이 어디서 저장되었는지 남기기 랜딩명까지-->
+			<input type="hidden" name="landing_name" value="">  <!--랜딩명-->
+			<input type="hidden" name="ld_url" value="/pro/pro04.php">	<!--현재 저장되는곳-->
+			<input type="hidden" name="returnurl" value="/pro/pro04.php">	<!--어디서 왔는지 url-->
+			<h4 style="font-size: 17px;color:white;text-align:center;padding-top: 20px;"> 상담가능한 시간과 문의사항을 남겨주세요</h4>
+
+			<label class="sr-only" for="in_name" style="opacity:0;"></label>
+			<input type="text" class="form-control" placeholder="이름을 입력하세요" name="in_name" id="in_name">
+
+			<label class="sr-only" for="in_phone_txt" style="opacity:0;"></label>
+			<input type="text" class="form-control" placeholder="연락처를 입력하세요" name="in_phone" id="in_phone">
+
+			<label class="sr-only" for="in_email_txt" style="opacity:0;"></label>
+			<input type="text" class="form-control" placeholder="이메일을 입력하세요" name="in_email" id="in_email">
+
+			<label class="sr-only" for="in_password_txt" style="opacity:0;"></label>
+			<input type="password" class="form-control" placeholder="비밀번호를 입력하세요" name="in_password" id="in_password">
+
+			<label class="sr-only" for="in_content" style="opacity:0;"></label>
+			<textarea placeholder="상담하실 내용을 작성해주세요." data-msg-required="상담하실 내용을 작성해주세요.." rows="6" class="form-control" name="in_content" id="in_content"></textarea>
+
+			<div class="allow_1">
+				<p class="text_w"><input type="checkbox" class="allow" name="allow" value="true" checked="checked"> 개인정보동의 <a href="#" onclick="window.open('./popup.php','','width=500,height=700,scrollbars=1');return false;" style="color:#fff;text-decoration:none;">[자세히보기]</a></p>
+				<p class="text_g">(입력하신 정보는 보안 서버 및 개인정보 취급 정책에 따라 안전하게 보호됩니다)</p>
+			</div>
+
+				<input type="image" value="상담하기" src="new_images/img_22.jpg" class="frm_btn" style="max-width: 100%;padding-bottom: 10px;">
+		</form>
+	</div>
+</div>
+
+
+<!-- WIDERPLANET  SCRIPT START 2016.3.24 -->
+<div id="wp_tg_cts" style="display:none;"></div>
+<script type="text/javascript">
+var wptg_tagscript_vars = wptg_tagscript_vars || [];
+wptg_tagscript_vars.push(
+(function() {
+	return {
+		wp_hcuid:"",   /*Cross device targeting을 원하는 광고주는 로그인한 사용자의 Unique ID (ex. 로그인 ID, 고객넘버 등)를 암호화하여 대입.
+				*주의: 로그인 하지 않은 사용자는 어떠한 값도 대입하지 않습니다.*/
+		ti:"26945",	/*광고주 코드*/
+		ty:"Home",	/*트래킹태그 타입*/
+		device:"web"	/*디바이스 종류 (web 또는 mobile)*/
+
+	};
+}));
+</script>
+<script type="text/javascript" async src="//cdn-aitg.widerplanet.com/js/wp_astg_4.0.js"></script>
+<!-- // WIDERPLANET  SCRIPT END 2016.3.24 -->
+
+<script type="text/javascript">
+    var roosevelt_params = {
+        retargeting_id:'TEzluIle7sNL43X_IYxfXQ00',
+        tag_label:'PAQbqT6mQKSxzEhyn2mjYg'
+    };
+</script>
+<script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script>
+
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_1c53b5953201";
+if (!_nasa) var _nasa={};
+wcs.inflow();
+wcs_do(_nasa);
+</script>
+
+
+<!-- 네이버 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="http://wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript"> if(!wcs_add) var wcs_add = {}; wcs_add["wa"] = "9948fec28fb940"; wcs_do(); </script>
+
+<script type="text/javascript">
+    var roosevelt_params = {
+        retargeting_id:'TEzluIle7sNL43X_IYxfXQ00',
+        tag_label:'lTN3R9SgSuS1EC52xlI26g'
+    };
+</script>
+<script type="text/javascript" src="//adimg.daumcdn.net/rt/roosevelt.js" async></script>
+</body>
+</html>
