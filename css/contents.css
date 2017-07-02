@@ -722,6 +722,14 @@
     .errorBox .btn a {width:24.5rem;margin:2.5rem 0 0;font-size:2rem;}
 
 	.botBanner {margin:6rem 0 0;}
+
+    .stopWrap {padding:3rem 0 0;}
+    .stopWrap h1 {padding:0 0 2rem;border-width:.3rem;}
+    .stopWrap h1 img {width:10rem;}
+    .stopWrap h1 span {margin:2rem 0 0;font-size:2rem;}
+    .stopWrap .txt {padding:3rem 0 3rem;font-size:1.2rem;}
+    .stopWrap .time {padding:0 2rem;font-size:1.2rem;line-height:3
+
 }
 @media all and (max-width:767px) {
     .infoTop {height:250px;}
@@ -884,5 +892,4 @@
     .errorBox .btn a {width:15rem;margin:2.5rem 0 0;font-size:1.4rem;}
 
 	.botBanner {margin:2rem 0 0;}
-
 }
