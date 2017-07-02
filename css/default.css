@@ -1,37 +1,37 @@
 @charset "utf-8";
 @font-face {
  font-family: 'NanumSquare';
- src: url(../font/NanumSquare.eot);
- src: url(../font/NanumSquare.eot?#iefix) format('embedded-opentype'),
-      url(../font/NanumSquare.woff) format('woff'),
-      url(../font/NanumSquare.ttf) format('truetype');
+ src: url(/Res/font/NanumSquare.eot);
+ src: url(/Res/font/NanumSquare.eot?#iefix) format('embedded-opentype'),
+      url(/Res/font/NanumSquare.woff) format('woff'),
+      url(/Res/font/NanumSquare.ttf) format('truetype');
 }
 @font-face {
   font-family: 'NanumM';
   font-style: normal;
   font-weight: 400;
-  src: url(../font/NanumMyeongjo-Regular.eot);
-  src: url(../font/NanumMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../font/NanumMyeongjo-Regular.woff) format('woff'),
-       url(../font/NanumMyeongjo-Regular.ttf) format('truetype');
+  src: url(/Res/font/NanumMyeongjo-Regular.eot);
+  src: url(/Res/font/NanumMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(/Res/font/NanumMyeongjo-Regular.woff) format('woff'),
+       url(/Res/font/NanumMyeongjo-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'NanumM';
   font-style: normal;
   font-weight: 600;
-  src: url(../font/NanumMyeongjo-Bold.eot);
-  src: url(../font/NanumMyeongjo-Bold.eot?#iefix) format('embedded-opentype'),
-       url(../font/NanumMyeongjo-Bold.woff) format('woff'),
-       url(../font/NanumMyeongjo-Bold.ttf) format('truetype');
+  src: url(/Res/font/NanumMyeongjo-Bold.eot);
+  src: url(/Res/font/NanumMyeongjo-Bold.eot?#iefix) format('embedded-opentype'),
+       url(/Res/font/NanumMyeongjo-Bold.woff) format('woff'),
+       url(/Res/font/NanumMyeongjo-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'NanumM';
   font-style: normal;
   font-weight: 700;
-  src: url(../font/NanumMyeongjo-ExtraBold.eot);
-  src: url(../font/NanumMyeongjo-ExtraBold.eot?#iefix) format('embedded-opentype'),
-       url(../font/NanumMyeongjo-ExtraBold.woff) format('woff'),
-       url(../font/NanumMyeongjo-ExtraBold.ttf) format('truetype');
+  src: url(/Res/font/NanumMyeongjo-ExtraBold.eot);
+  src: url(/Res/font/NanumMyeongjo-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(/Res/font/NanumMyeongjo-ExtraBold.woff) format('woff'),
+       url(/Res/font/NanumMyeongjo-ExtraBold.ttf) format('truetype');
 }
 
 * {margin:0;padding:0;}
@@ -59,18 +59,18 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 
 .skipNavi li {font-size:0;line-height:0;}
 .skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#044894;color:#fff;font-size:14px;line-height:2;text-align:center;z-index:500;}
-.skipNavi li a:focus {top:0;} 
+.skipNavi li a:focus {top:0;}
 
 .chk {display:inline-block;cursor:pointer;vertical-align:middle;}
 .chk + .chk {margin:0 0 0 5px;}
 .chk input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
-.chk input + span:before {content:"";display:inline-block;display:none\9;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('../images/icon_pack.png') no-repeat 0 -26px;}
+.chk input + span:before {content:"";display:inline-block;display:none\9;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('/Res/images/icon_pack.png') no-repeat 0 -26px;}
 .chk input:checked + span:before {background-position:0 -48px;}
 
 .radio {display:inline-block;cursor:pointer;vertical-align:middle;}
 .radio + .radio {margin:0 0 0 5px;}
 .radio input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
-.radio input + span:before {content:"";display:inline-block;display:none\9;width:25px;height:25px;margin:0 4px 0 0;vertical-align:middle;background:url('../images/icon_pack.png') no-repeat -30px -41px;}
+.radio input + span:before {content:"";display:inline-block;display:none\9;width:25px;height:25px;margin:0 4px 0 0;vertical-align:middle;background:url('/Res/images/icon_pack.png') no-repeat -30px -41px;}
 .radio input:checked + span:before {background-position:-55px -41px;}
 
 .ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;z-index:10!important;}
@@ -83,7 +83,7 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 .ui-datepicker select.ui-datepicker-year {border:0;background:none;}
 .ui-datepicker td span,
 .ui-datepicker td a {display:block;padding:5px;text-align:center;}
-.ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../images/btn_cal.gif) no-repeat;font:0/0 a!important;}
+.ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(/Res/images/btn_cal.gif) no-repeat;font:0/0 a!important;}
 
 @media all and (max-width:1023px) {
 	body, input, select, textarea, button {font-size:1.4rem;}
@@ -102,7 +102,7 @@ input.txt:focus, textarea:focus {border:1px solid #57b8bb;}
 @media all and (max-width:560px) {
 	body, input, select, textarea, button {font-size:1.2rem;letter-spacing:-.05rem;}
 	select, input.txt {height:2.8rem;letter-spacing:-.05rem;}
-	
+
 	.ui-datepicker {width:24rem;border:.1rem solid #ccc;}
 	.ui-datepicker .ui-datepicker-header {padding:.5rem 0;}
 	.ui-datepicker .ui-datepicker-prev,
